@@ -1,9 +1,9 @@
 import styles from '../assets/sass/Button.module.scss';
 
-function Button() {
+function Button({ text }) {
   return (
     <button className={styles.btn_faixa}>
-      Quero conhecê-lo!
+      {text}
     </button>
   );
 }

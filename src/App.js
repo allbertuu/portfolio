@@ -73,7 +73,7 @@ function App() {
             <span className="item_3">Muito prazer o/</span>
           </div>
           <div>
-            <Button />
+            <Button text="Quero conhecê-lo!" />
           </div>
         </section>
 
