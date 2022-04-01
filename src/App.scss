@@ -1,0 +1,119 @@
+// não ser especifico em algo grande - tags principais
+// usar o nesting em componentes menores
+
+//somente componentizar o que precisa de interações em JS
+
+//seleção total
+// * {
+//   border: 1px solid red;
+// }
+
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap");
+
+:root {
+  --shadow: rgba(0, 0, 0, 0.151);
+  --shadow-dark: rgba(0, 0, 0, 0.308);
+  --red: #e30842;
+  --red-dark: #a30932;
+  --red-darker: #a10831d0;
+  --blue-dark: #052131;
+}
+
+body {
+  background: linear-gradient(70deg, #33242b, var(--red));
+  user-select: none;
+  font-family: "Titillium Web", sans-serif;
+}
+
+// #116479
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  box-shadow: 0 0 12px 5px var(--shadow);
+
+  height: 70px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 99;
+
+  .l_logo {
+    color: white;
+  }
+
+  nav {
+    ul {
+      display: flex;
+      gap: 1rem;
+      list-style: none;
+    }
+  }
+}
+
+main {
+  section {
+    height: 100vh;
+    @apply grid grid-cols-1;
+  }
+}
+
+.l_welcome {
+  align-content: center;
+  justify-items: center;
+  position: relative;
+  @apply md:grid-cols-2 gap-4;
+
+  .welcome {
+    @apply text-2xl md:text-4xl lg:text-5xl
+    text-white text-center;
+
+    span {
+      display: block;
+    }
+
+    .item_3 {
+      @apply text-base lg:text-xl;
+    }
+  }
+
+  .teste {
+    width: 200px;
+    height: 100px;
+    background-color: white;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      z-index: 2;
+      width: 30px;
+      height: 30px;
+      top: -15px;
+      right: -15px;
+      background-color: var(--blue-dark);
+      border-radius: 100%;
+    }
+  }
+}
+
+.l_aboutMe {
+  background: var(--blue-dark);
+  box-shadow: inset 5px 5px 20px 3px var(--shadow-dark);
+  align-content: center;
+  justify-items: center;
+  position: relative;
+  @apply md:grid-cols-2 gap-4;
+
+  .box {
+    @apply w-64 lg:w-96
+    h-64 lg:h-96;
+    border-radius: 9px;
+    background: linear-gradient(88deg, var(--red-dark) 20%, var(--red-darker) 80%);
+    box-shadow: 11px 11px 22px #041a26, -11px -11px 22px #06283c;
+  }
+
+  .aboutMe {
+  }
+}
