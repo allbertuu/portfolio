@@ -1,0 +1,10 @@
+.l_projects {
+  width: 100%;
+  background-color: var(--blue-dark);
+  padding-top: 3rem;
+
+  align-content: center;
+  justify-items: center;
+  position: relative;
+  @apply grid-cols-1 md:grid-cols-3 gap-4;
+}

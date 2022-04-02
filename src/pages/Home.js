@@ -59,6 +59,9 @@ function Home() {
         <div className="aboutMe">
           Sobre mim
         </div>
+        <div>
+          
+        </div>
       </section>
     </main>
   );

@@ -1,0 +1,105 @@
+/* From cssbuttons.io by @gagan-gv */
+.card {
+  width: 150px;
+  height: 200px;
+  @media (min-width: 600px) {
+    & {
+      width: 190px;
+      height: 254px;
+    }
+  }
+  @media (min-width: 1024px) {
+    & {
+      width: 220px;
+      height: 280px;
+    }
+  }
+  @media (min-width: 1024px) {
+    & {
+      width: 250px;
+      height: 310px;
+    }
+  }
+  background: #f0f0f0;
+  border-radius: 10px;
+  text-align: center;
+  transition: all 0.5s;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  box-shadow: 0 2px 15px 2px var(--shadow-dark);
+
+  &:hover {
+    background-color: var(--red-dark);
+  }
+
+  > .blob {
+    height: 10px;
+    width: 75%;
+    border-radius: 0 0 30px 30px;
+    margin: 0 auto;
+    background-color: var(--red-dark);
+    transition: all 0.3s;
+  }
+
+  &:hover > .blob {
+    height: 0;
+  }
+
+  > .icon {
+    display: flex;
+    width: 50%;
+    height: 35%;
+    margin: 2rem 0;
+    background-color: var(--red-dark);
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+  }
+
+  &:hover > .icon {
+    width: 100%;
+    height: 70%;
+    border-radius: 10px;
+    margin: 0 auto;
+    background-color: #f0f0f0;
+    z-index: 2;
+  }
+
+  > h2 {
+    display: block;
+    padding: 1rem auto;
+
+    font-weight: 600;
+    @apply text-base md:text-xl lg:text-2xl;
+    transition: all 0.1s;
+  }
+
+  &:hover > h2 {
+    display: none;
+    position: absolute;
+    transition: all 0.5s;
+  }
+
+  > p {
+    display: none;
+    transition: all 0.75s;
+
+    svg {
+      padding: 5px;
+    }
+  }
+
+  &:hover > p {
+    display: flex;
+    gap: 0.5rem;
+
+    position: absolute;
+    bottom: 1rem;
+
+    transition: all 0.1s;
+  }
+}

@@ -5,9 +5,9 @@ import {
   Route,
 } from "react-router-dom";
 
-import NavItem from './components/NavItem';
-
 import Home from './pages/Home';
+import Projetos from './pages/Projetos';
+import Header from './components/layout/Header';
 
 import sr from './assets/scripts/ScrollReveal';
 import './App.scss';
@@ -29,30 +29,17 @@ function App() {
   }, []);
 
   return (
-    <>
-      <header>
-        <div className='l_logo'>
-          Portfólio
-        </div>
+    <Router>
+      <Header />
 
-        <nav>
-          <ul>
-            <NavItem text="Início" link="/" />
-            <NavItem text="Projetos" link="/" />
-          </ul>
-        </nav>
-      </header>
-
-      <Router>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          {/* <Route path="/empresa" element={<Empresa />} />
-          <Route path="/contato" element={<Contato />} /> */}
-        </Routes>
-      </Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/projects" element={<Projetos />} />
+        {/* <Route path="/contato" element={<Contato />} /> */}
+      </Routes>
 
       <footer></footer>
-    </>
+    </Router>
   );
 }
 

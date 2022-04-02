@@ -1,0 +1,32 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  box-shadow: 0 0 12px 5px var(--shadow);
+
+  background: linear-gradient(70deg, #691a2f, var(--red));
+  @media (min-width: 760px) {
+    & {
+      background: linear-gradient(70deg, #582130, var(--red));
+    }
+  }
+
+  height: 70px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 99;
+
+  .l_logo {
+    color: white;
+  }
+
+  nav {
+    ul {
+      display: flex;
+      gap: 1rem;
+      list-style: none;
+    }
+  }
+}

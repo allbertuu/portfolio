@@ -4,6 +4,8 @@
   position: relative;
   @apply md:grid-cols-2 gap-4;
 
+  background: linear-gradient(70deg, #33242b, var(--red));
+
   .welcome {
     @apply text-2xl md:text-4xl lg:text-5xl
     text-white text-center;

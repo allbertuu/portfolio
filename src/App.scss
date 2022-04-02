@@ -3,54 +3,20 @@
 
 //somente componentizar o que precisa de interações em JS
 
-//seleção total
-// * {
-//   border: 1px solid red;
-// }
-
 @import url("https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap");
 
 :root {
   --shadow: rgba(0, 0, 0, 0.151);
   --shadow-dark: rgba(0, 0, 0, 0.308);
-  --red: #e30842;
+  --red: #da0941;
   --red-dark: #a30932;
   --red-darker: #a10831d0;
   --blue-dark: #052131;
 }
 
 body {
-  background: linear-gradient(70deg, #33242b, var(--red));
   user-select: none;
   font-family: "Titillium Web", sans-serif;
-}
-
-// #116479
-
-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-
-  box-shadow: 0 0 12px 5px var(--shadow);
-
-  height: 70px;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  z-index: 99;
-
-  .l_logo {
-    color: white;
-  }
-
-  nav {
-    ul {
-      display: flex;
-      gap: 1rem;
-      list-style: none;
-    }
-  }
 }
 
 main {

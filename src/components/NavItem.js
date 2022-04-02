@@ -1,10 +1,11 @@
 import styles from '../assets/sass/Button.module.scss';
+import { Link } from "react-router-dom";
 
 function NavItem({ text, link }) {
   return (
-    <a href={link} className={styles.btn_li}>
+    <Link to={link} className={styles.btn_li}>
       <li>{text}</li>
-    </a>
+    </Link>
   );
 }
 
