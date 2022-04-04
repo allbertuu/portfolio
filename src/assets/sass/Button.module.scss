@@ -32,6 +32,7 @@
 
   &:hover {
     color: var(--red);
+    @apply shadow-2xl;
   }
 }
 /* From cssbuttons.io by @ernestnash */
@@ -69,6 +70,6 @@
 
   &:hover {
     color: var(--red);
-    box-shadow: 0 2px 15px 0px var(--shadow-dark);
+    @apply shadow-xl;
   }
 }
