@@ -5,10 +5,10 @@ header {
 
   box-shadow: 0 0 12px 5px var(--shadow);
 
-  background: linear-gradient(70deg, #691a2f, var(--red));
+  background: linear-gradient(70deg, #7e1a35, var(--red));
   @media (min-width: 760px) {
     & {
-      background: linear-gradient(70deg, #582130, var(--red));
+      background: linear-gradient(70deg, #671b34, var(--red));
     }
   }
 

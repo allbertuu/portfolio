@@ -4,7 +4,7 @@
   position: relative;
   @apply md:grid-cols-2 gap-4;
 
-  background: linear-gradient(70deg, #33242b, var(--red));
+  background: linear-gradient(70deg, #412130, var(--red));
 
   .welcome {
     @apply text-2xl md:text-4xl lg:text-5xl
@@ -29,11 +29,12 @@
   @apply md:grid-cols-2
   gap-12
   px-9 md:px-16 lg:px-32;
+  user-select: text;
 
   .box {
     @apply w-64 lg:w-80
     h-64 lg:h-80;
-    border-radius: 9px;
+    border-radius: 0.6rem;
     background: linear-gradient(88deg, var(--red-dark) 20%, var(--red-darker) 80%);
     box-shadow: 11px 11px 22px #041a26, -11px -11px 22px #06283c;
   }
