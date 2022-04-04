@@ -38,36 +38,12 @@ function Home() {
       easing: 'ease',
     }
 
-    const delaySmallReveal = {
-      origin: 'top',
-      duration: 2200,
-      delay: 500,
-      distance: '100px',
-      easing: 'ease',
-    }
-    const delayMediumReveal = {
-      origin: 'top',
-      duration: 2000,
-      delay: 800,
-      distance: '50px',
-      easing: 'ease',
-    }
-    const delayBigReveal = {
-      origin: 'top',
-      duration: 2000,
-      delay: 1500,
-      distance: '50px',
-      easing: 'ease',
-    }
     //welcome
     sr.reveal('.item_1', item_1);
     sr.reveal('.item_2', item_2);
     sr.reveal('.item_3', item_3);
     sr.reveal('.item_4', item_4);
 
-    sr.reveal('.delaySmallReveal', delaySmallReveal)
-    sr.reveal('.delayMediumReveal', delayMediumReveal)
-    sr.reveal('.delayBigReveal', delayBigReveal)
   }, []);
 
   return (
@@ -84,7 +60,7 @@ function Home() {
       </section>
 
       <section className='l_aboutMe'>
-        <div className="box">
+        <div className="box delaySmallReveal">
           Box
         </div>
         <div className="aboutMe">

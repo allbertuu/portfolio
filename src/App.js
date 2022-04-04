@@ -10,22 +10,38 @@ import Projetos from './pages/Projetos';
 import Header from './components/layout/Header';
 
 import sr from './assets/scripts/ScrollReveal';
+
 import './App.scss';
 
 function App() {
 
   useEffect(() => {
 
-    const config = {
-      origin: 'right',
-      duration: 1500,
-      delay: 150,
+    const delaySmallReveal = {
+      origin: 'top',
+      duration: 2200,
+      delay: 200,
+      distance: '100px',
+      easing: 'ease',
+    }
+    const delayMediumReveal = {
+      origin: 'top',
+      duration: 2000,
+      delay: 800,
       distance: '50px',
-      scale: 1,
+      easing: 'ease',
+    }
+    const delayBigReveal = {
+      origin: 'top',
+      duration: 2000,
+      delay: 1100,
+      distance: '50px',
       easing: 'ease',
     }
 
-    sr.reveal('.box', config);
+    sr.reveal('.delaySmallReveal', delaySmallReveal)
+    sr.reveal('.delayMediumReveal', delayMediumReveal)
+    sr.reveal('.delayBigReveal', delayBigReveal)
   }, []);
 
   return (

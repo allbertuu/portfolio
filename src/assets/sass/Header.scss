@@ -13,8 +13,9 @@ header {
   }
 
   height: 70px;
+  min-height: 70px;
   width: 100%;
-  position: absolute;
+  position: fixed;
   top: 0;
   z-index: 99;
 
