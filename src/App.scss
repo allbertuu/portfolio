@@ -18,6 +18,9 @@
 body {
   user-select: none;
   font-family: "Titillium Web", sans-serif;
+  ::selection {
+    background-color: var(--red);
+  }
 }
 
 main {
