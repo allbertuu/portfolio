@@ -29,13 +29,3 @@ main {
     @apply grid grid-cols-1;
   }
 }
-
-h2 {
-  @apply text-3xl lg:text-4xl
-  uppercase
-  mb-2;
-}
-p {
-  @apply text-base lg:text-lg;
-  color: var(--white-text);
-}

@@ -11,7 +11,6 @@ import Header from './components/layout/Header';
 import './App.scss';
 
 function App() {
-  //fetch API Github pinned projects
   return (
     <Router>
       <Header />
@@ -19,7 +18,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/projects" element={<Projetos />} />
-        {/* <Route path="/contato" element={<Contato />} /> */}
+        {/* <Route path="/skills" element={<Habilidades />} /> */}
       </Routes>
 
       <footer></footer>
