@@ -2,7 +2,7 @@ import styles from '../assets/sass/CardProject.module.scss';
 
 function CardProject() {
   return (
-    <div className={styles.card}>
+    <div className={`${styles.card} intervalCardReveal`}>
       <div className={styles.blob}></div>
       {/* aqui será um icone, pensei na logo do site */}
       <span className={styles.icon}/>

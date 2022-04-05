@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import { initScrollReveal } from '../assets/scripts/initScrollReveal';
 
 import Button from '../components/Button';
 
@@ -8,6 +9,8 @@ import '../assets/sass/Home.scss';
 function Home() {
 
   useEffect(() => {
+
+    initScrollReveal();
 
     const item_1 = {
       origin: 'top',
@@ -60,16 +63,16 @@ function Home() {
       </section>
 
       <section className='l_aboutMe'>
-        <div className="box delaySmallReveal">
-          Box
+        <div className="box delaySmallReveal intervalCardReveal">
+          
         </div>
-        <div className="aboutMe">
-          <h2 className="delaySmallReveal">Sobre mim</h2>
-          <p className="delayMediumReveal">
+        <div className="aboutMe intervalCardReveal">
+          <h2 className="delaySmallReveal intervalCardReveal">Sobre mim</h2>
+          <p className="delayMediumReveal intervalCardReveal">
             Meu nome é Alberto Albuquerque, tenho 19 anos e sou desenvolvedor Front-end Jr. <br />
-            Meu início no mundo da programação se deu em 2019, onde tive meu primeiro contato com uma 
-            linguagem de programação: <i>C#</i>. <br/>
-            Me encantei pela forma de como alguns problemas recorrentes e necessários 
+            Meu início no mundo da programação se deu em 2019, onde tive meu primeiro contato com uma
+            linguagem de programação: <i>C#</i>. <br />
+            Me encantei pela forma de como alguns problemas recorrentes e necessários
             podem facilmente serem resolvidos com o auxílio da tecnologia.
           </p>
         </div>
