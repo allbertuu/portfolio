@@ -1,21 +1,26 @@
 import { useEffect } from 'react';
 import { initScrollReveal } from '../assets/scripts/initScrollReveal';
-import '../assets/sass/Projetos.scss';
+
 import CardProject from '../components/CardProject';
+
+//imgs
+
+import '../assets/sass/Projetos.scss';
 
 function Projetos() {
 
   useEffect(() => {
+    //fetch API Github pinned projects
     initScrollReveal();
-  },[])
+  }, [])
 
   return (
     <main>
-      <section className="l_projects">
+      <section className="s_projects">
         <div className='projects_cards delaySmallReveal'>
-          <CardProject />
-          <CardProject />
-          <CardProject />
+          <CardProject title='Sneakers' img={0} />
+          <CardProject title='Netflix Clone' img={0} />
+          <CardProject title='Letmeask' img={0} />
         </div>
       </section>
     </main>
