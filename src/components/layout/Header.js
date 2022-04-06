@@ -5,7 +5,7 @@ import '../../assets/sass/Header.scss';
 function Header() {
   return (
     <header>
-      <div className='l_logo'>
+      <div className='c_logo'>
         Portfólio
       </div>
 
