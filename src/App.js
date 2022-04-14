@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react';
 import {
   BrowserRouter as Router,
   Routes,
@@ -11,9 +12,24 @@ import Header from './components/layout/Header';
 import './App.scss';
 
 function App() {
+
+  const [isHeaderVisible, setHeaderVisibility] = useState(false);
+
+  useEffect(() => {
+    const scrollListener = () => {
+      window.scrollY > 70 ? setHeaderVisibility(true) : setHeaderVisibility(false);
+    }
+
+    window.addEventListener('scroll', scrollListener);
+
+    return () => {
+      window.removeEventListener('scroll', scrollListener)
+    }
+  }, []);
+
   return (
     <Router>
-      <Header />
+      <Header headerVisibility = {isHeaderVisible}/>
 
       <Routes>
         <Route path="/" element={<Home />} />

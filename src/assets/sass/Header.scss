@@ -1,3 +1,4 @@
+// Colors
 @import "./variables/colors/colors.scss";
 
 header {
@@ -5,17 +6,20 @@ header {
   align-items: center;
   justify-content: space-around;
 
-  box-shadow: 0 0 12px 5px var(--shadow);
-
-  background: linear-gradient(70deg, #7e1a35, $primary-color);
-  @media (min-width: 760px) {
-    & {
-      background: linear-gradient(70deg, #671b34, $primary-color);
+  &.headerVisible {
+    background: linear-gradient(70deg, #7e1a35, $primary-color);
+    @media (min-width: 760px) {
+      & {
+        background: linear-gradient(70deg, #671b34, $primary-color);
+      }
     }
+
+    transition: all ease .5s;
+
+    @apply shadow-md;
   }
 
   height: 70px;
-  min-height: 70px;
   width: 100%;
   position: fixed;
   top: 0;
