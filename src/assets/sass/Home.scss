@@ -95,17 +95,15 @@ $timing-function: cubic-bezier(0.86, 0.03, 0.09, 0.95);
 
     .item_1 {
       font-size: $h3;
-      line-height: 1.75rem;
       @include animationText(0.2s, scaleUpH3);
     }
     .item_2 {
       font-size: $h1;
-      line-height: 2.5rem;
+      line-height: 2.6rem;
       @include animationText(2.2s, scaleUpH1);
     }
     .item_3 {
       font-size: $h2;
-      line-height: 2rem;
       @include animationText(4s, scaleUpH2);
     }
   }
