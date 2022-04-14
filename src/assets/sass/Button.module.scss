@@ -1,3 +1,4 @@
+// Colors
 @import "./variables/colors/colors.scss";
 
 @keyframes animate {
@@ -90,8 +91,6 @@
 
   &.md {
     font-size: 1rem;
-
-    // border: 1px solid white;
   
     &::before {
       content: "";

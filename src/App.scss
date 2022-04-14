@@ -1,5 +1,10 @@
+// TailwindCSS
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+// Fonts
 @import url("https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap");
-
+// Colors
 @import "./assets/sass/variables/colors/colors.scss";
 
 body {
