@@ -1,6 +1,8 @@
+@import "./colors/colors.scss";
+
 .s_projects {
   width: 100%;
-  background-color: var(--blue-dark);
+  background-color: $secondary-color;
   padding-top: 3rem;
 }
 

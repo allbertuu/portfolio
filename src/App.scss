@@ -1,20 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap");
 
-:root {
-  --shadow: rgba(0, 0, 0, 0.151);
-  --shadow-dark: rgba(0, 0, 0, 0.308);
-  --red: #da0941;
-  --red-dark: #a30932;
-  --red-darker: #a10831d0;
-  --blue-dark: #052131;
-  --white-text: rgba(255, 255, 255, 0.911);
-}
+@import "./assets/sass/colors/colors.scss";
 
 body {
   user-select: none;
   font-family: "Titillium Web", sans-serif;
   ::selection {
-    background-color: var(--red);
+    color: white;
+    background-color: $primary-color;
   }
 }
 

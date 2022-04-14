@@ -1,3 +1,5 @@
+@import "./colors/colors.scss";
+
 header {
   display: flex;
   align-items: center;
@@ -5,10 +7,10 @@ header {
 
   box-shadow: 0 0 12px 5px var(--shadow);
 
-  background: linear-gradient(70deg, #7e1a35, var(--red));
+  background: linear-gradient(70deg, #7e1a35, $primary-color);
   @media (min-width: 760px) {
     & {
-      background: linear-gradient(70deg, #671b34, var(--red));
+      background: linear-gradient(70deg, #671b34, $primary-color);
     }
   }
 
@@ -23,11 +25,7 @@ header {
     color: white;
   }
 
-  nav {
-    ul {
-      display: flex;
-      gap: 1rem;
-      list-style: none;
-    }
+  .c_menu_sm {
+    background: #052131e5;
   }
 }

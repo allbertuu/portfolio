@@ -1,3 +1,5 @@
+@import "./colors/colors.scss";
+
 /* From cssbuttons.io by @gagan-gv */
 .card {
   width: 150px;
@@ -24,7 +26,7 @@
   border-radius: 10px;
   transition: all 0.5s;
   position: relative;
-  
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -33,7 +35,7 @@
   box-shadow: 0 2px 15px 2px var(--shadow-dark);
 
   &:hover {
-    background-color: var(--red-dark);
+    background-color: $primary-color-dark;
     justify-content: normal;
   }
 }
@@ -43,7 +45,7 @@
   width: 75%;
   border-radius: 0 0 30px 30px;
   margin: 0 auto;
-  background-color: var(--red-dark);
+  background-color: $primary-color-dark;
   transition: all 0.3s;
   position: absolute;
   top: 0;
@@ -56,7 +58,7 @@
 .mainImg {
   width: 50%;
   height: 35%;
-  background-color: var(--red-dark);
+  background-color: $primary-color-dark;
   border-radius: 20px;
   // display: flex;
   // justify-content: center;
