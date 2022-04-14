@@ -4,7 +4,7 @@ import btn from '../assets/sass/Button.module.scss';
 
 function NavItem({ text, link, toggle, isMenuOpen }) {
   return (
-    <Link to={link} className={isMenuOpen ? `${btn.btn_li} ${btn.btn_li_sm}` : `${btn.btn_li} ${btn.btn_li_md}`}>
+    <Link to={link} className={isMenuOpen ? `${btn.btn_li} ${btn.sm}` : `${btn.btn_li} ${btn.md}`}>
       <li onClick={() => setTimeout((toggle),400)}>{text}</li>
     </Link>
   );
