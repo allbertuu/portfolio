@@ -2,7 +2,6 @@ import { useEffect } from 'react';
 //components
 import Button from '../components/Button';
 //icons and imgs
-// import imgCard from '../assets/imgs/img.png';
 //scripts
 import sr from '../assets/scripts/ScrollReveal';
 import { initScrollReveal } from '../assets/scripts/initScrollReveal';
@@ -28,19 +27,11 @@ function Home() {
       origin: 'top',
       delay: 4000,
     }
-    const item_4 = {
-      origin: 'bottom',
-      duration: 850,
-      delay: 6000,
-      scale: 0.5,
-      easing: 'ease',
-    }
 
     //welcome
     sr.reveal('.item_1', item_1);
     sr.reveal('.item_2', item_2);
     sr.reveal('.item_3', item_3);
-    sr.reveal('.c_btn', item_4);
 
   }, []);
 
@@ -64,11 +55,11 @@ function Home() {
         <div className="box delaySmallReveal intervalCardReveal">
 
         </div>
-        <div className="aboutMe intervalCardReveal">
-          <h2 className="delaySmallReveal intervalCardReveal">
+        <div className="c_aboutMe intervalCardReveal">
+          <h2 className="delaySmallReveal">
             Sobre mim
           </h2>
-          <p className="delaySmallReveal intervalCardReveal">
+          <p className="delayMediumReveal">
             Meu nome é Alberto Albuquerque, tenho 19 anos e sou desenvolvedor Front-end. <br />
             Meu início no mundo da programação se deu em 2019, onde tive meu primeiro contato com uma
             linguagem de programação: <i>C#</i>. <br />

@@ -62,15 +62,26 @@
     box-shadow: 11px 11px 22px #041a26, -11px -11px 22px #041824;
   }
 
-  .aboutMe {
+  .c_aboutMe {
     @apply md:justify-self-start;
 
     h2 {
       color: white;
       @apply text-3xl lg:text-4xl
       uppercase;
-      text-decoration: underline 0.3rem $primary-color;
-      margin-bottom: 1rem;
+      margin-bottom: 1.5rem;
+      padding-left: .5rem;
+
+      &::after {
+        content: "";
+        background-color: $primary-color;
+        position: absolute;
+        left: 0;
+        display: block;
+        width: 100%;
+        height: .4rem;
+        margin-top: .5rem;
+      }
     }
     p {
       max-width: 500px;
