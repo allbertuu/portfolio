@@ -1,3 +1,4 @@
+// styles
 import btn from '../assets/sass/Button.module.scss';
 
 function Button({ text }) {
