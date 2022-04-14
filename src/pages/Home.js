@@ -17,6 +17,7 @@ function Home() {
 
     const item_1 = {
       origin: 'top',
+      distance: 0,
       delay: 200,
     }
     const item_2 = {
@@ -45,23 +46,21 @@ function Home() {
 
   return (
     <main>
-      <section className='s_welcome'>
-        <div className="c_knowMe">
-          <div className="text">
-            <span className="item_1">Olá!</span>
-            <span className="item_2">Me chamo Alberto</span>
-            <span className="item_3">Desenvolvedor Front-end</span>
+      <section id='s_welcome'>
+        <div className="c_whoIAm">
+          <div className="c_text">
+            <h3 className="item_1">Olá, me chamo</h3>
+            <h1 className="item_2">Alberto Albuquerque</h1>
+            <h2 className="item_3">Desenvolvedor Front-end</h2>
           </div>
-          <div className='c_btn'>
-            <Button text="Quero conhecê-lo!" />
-          </div>
+          <Button text="Quero conhecê-lo!" />
         </div>
         <div className=''>
 
         </div>
       </section>
 
-      <section className='s_aboutMe'>
+      <section id='s_aboutMe'>
         <div className="box delaySmallReveal intervalCardReveal">
 
         </div>
