@@ -1,9 +1,12 @@
 import { useEffect } from 'react';
-import { initScrollReveal } from '../assets/scripts/initScrollReveal';
-
+//components
 import Button from '../components/Button';
-
+//icons and imgs
+// import imgCard from '../assets/imgs/img.png';
+//scripts
 import sr from '../assets/scripts/ScrollReveal';
+import { initScrollReveal } from '../assets/scripts/initScrollReveal';
+//styles
 import '../assets/sass/Home.scss';
 
 function Home() {
@@ -36,20 +39,25 @@ function Home() {
     sr.reveal('.item_1', item_1);
     sr.reveal('.item_2', item_2);
     sr.reveal('.item_3', item_3);
-    sr.reveal('.btn_wantToMeetYou', item_4);
+    sr.reveal('.c_btn', item_4);
 
   }, []);
 
   return (
     <main>
       <section className='s_welcome'>
-        <div className="welcome_text">
-          <span className="item_1">Olá!</span>
-          <span className="item_2">Me chamo Alberto</span>
-          <span className="item_3">Muito prazer o/</span>
+        <div className="c_knowMe">
+          <div className="text">
+            <span className="item_1">Olá!</span>
+            <span className="item_2">Me chamo Alberto</span>
+            <span className="item_3">Desenvolvedor Front-end</span>
+          </div>
+          <div className='c_btn'>
+            <Button text="Quero conhecê-lo!" />
+          </div>
         </div>
-        <div className='btn_wantToMeetYou'>
-          <Button text="Quero conhecê-lo!" />
+        <div className=''>
+
         </div>
       </section>
 
@@ -62,7 +70,7 @@ function Home() {
             Sobre mim
           </h2>
           <p className="delaySmallReveal intervalCardReveal">
-            Meu nome é Alberto Albuquerque, tenho 19 anos e sou desenvolvedor Front-end Jr. <br />
+            Meu nome é Alberto Albuquerque, tenho 19 anos e sou desenvolvedor Front-end. <br />
             Meu início no mundo da programação se deu em 2019, onde tive meu primeiro contato com uma
             linguagem de programação: <i>C#</i>. <br />
             Me encantei pela forma de como alguns problemas recorrentes e necessários
