@@ -1,22 +1,49 @@
 @import "./variables/colors/colors.scss";
 
-/* From cssbuttons.io by @nikk7007 */
-.btn_faixa {
-  padding: 0.8em 1.8em;
-  border: 2px solid white;
+@keyframes animate {
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.btn {
+  background-color: transparent;
   position: relative;
   overflow: hidden;
-  height: 50px;
+  border-radius: 0.3rem;
+  text-decoration: none;
+}
 
-  background-color: transparent;
+.btn_faixa {
+  @extend .btn;
+  padding: 0.8em 1.8em;
+
+  height: 50px;
 
   text-align: center;
   text-transform: uppercase;
-  font-size: 16px;
+  font-size: 1rem;
   color: white;
 
   transition: 0.3s;
   z-index: 1;
+  opacity: 0;
+
+  animation: show 1.5s forwards 6s;
+
+  &:hover {
+    color: $primary-color;
+    @apply shadow-2xl;
+  }
 
   &::before {
     content: "";
@@ -27,7 +54,7 @@
     left: 50%;
     transform: translate(-50%, -50%) rotate(20deg);
     background: white;
-    transition: 0.5s ease;
+    transition: .5s ease;
     display: block;
     z-index: -1;
   }
@@ -36,30 +63,35 @@
     width: 105%;
   }
 
-  &:hover {
-    color: $primary-color;
-    @apply shadow-2xl;
+  &:after {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 2px;
+    width: 2rem;
+    background-color: white;
+    transition: .5s ease;
+    animation: animate ease forwards 3s 6.1s;
   }
 }
 
-
-/* From cssbuttons.io by @ernestnash */
 .btn_li {
+  @extend .btn;
   padding: 0.5rem 1rem;
 
   color: white;
-  text-decoration: none;
 
   cursor: pointer;
-  position: relative;
-  background-color: transparent;
-  overflow: hidden;
   font-family: inherit;
 
   &.md {
     font-size: 1rem;
 
-    border: 1px solid white;
+    // border: 1px solid white;
   
     &::before {
       content: "";
@@ -71,6 +103,7 @@
       background-color: white;
       transform: translateX(-100%);
       transition: all 0.3s;
+      opacity: 0;
       z-index: -1;
     }
   
@@ -80,6 +113,7 @@
   
       &::before {
         transform: translateX(0);
+        opacity: 1;
       }
     }
   }
