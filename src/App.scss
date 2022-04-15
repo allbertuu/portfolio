@@ -6,6 +6,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap");
 // Colors
 @import "./assets/sass/variables/colors/colors.scss";
+// Typography
+@import "./assets/sass/variables/typography/headings.scss";
+// Commons
+@import "./assets/sass/variables/common/mixins.scss";
+@import "./assets/sass/variables/common/keyframes.scss";
 
 body {
   user-select: none;
@@ -16,9 +21,111 @@ body {
   }
 }
 
-main {
-  section {
-    height: 100vh;
-    @apply grid grid-cols-1;
+section {
+  height: 100vh;
+  @apply grid grid-cols-1;
+}
+
+#s_welcome,
+#s_aboutMe {
+  @apply px-9 md:px-16 lg:px-32;
+}
+
+#s_welcome {
+  align-content: center;
+  justify-items: center;
+  position: relative;
+  @apply md:grid-cols-2 
+  gap-4;
+
+  background: $primary-bg;
+}
+
+#s_aboutMe {
+  background: $secondary-color;
+  box-shadow: inset 5px 5px 20px 3px var(--shadow-dark);
+  align-content: center;
+  justify-items: center;
+  position: relative;
+  @apply md:grid-cols-2
+  gap-12;
+  user-select: text;
+
+  .box {
+    @apply w-64 lg:w-80
+    h-64 lg:h-80;
+    border-radius: 0.6rem;
+    background: linear-gradient(88deg, $primary-color-dark 20%, $primary-color-darker 80%);
+    box-shadow: 11px 11px 22px #041a26, -11px -11px 22px #041824;
   }
+
+  .c_aboutMe {
+    @apply md:justify-self-start;
+
+    h2 {
+      color: white;
+      @apply text-3xl lg:text-4xl
+      uppercase;
+      margin-bottom: 1.5rem;
+      padding-left: 0.5rem;
+
+      &::after {
+        content: "";
+        background-color: $primary-color;
+        position: absolute;
+        left: 0;
+        display: block;
+        width: 100%;
+        height: 0.4rem;
+        margin-top: 0.5rem;
+      }
+    }
+    p {
+      max-width: 500px;
+      text-align: justify;
+      @apply text-base lg:text-lg;
+      color: $white-text;
+    }
+  }
+}
+
+.c_whoIAm {
+  @apply flex flex-col items-center gap-6;
+
+  .c_text {
+    @apply text-white text-center;
+
+    .item_1 {
+      font-size: $h3;
+      @include animationText(0.2s, scaleUpH3);
+    }
+    .item_2 {
+      font-size: $h1;
+      line-height: 2.6rem;
+      @include animationText(2.2s, scaleUpH1);
+    }
+    .item_3 {
+      font-size: $h2;
+      @include animationText(4s, scaleUpH2);
+    }
+  }
+
+  button {
+    max-width: fit-content;
+  }
+}
+
+//Projects
+#s_projects {
+  width: 100%;
+  background: $primary-bg;
+  padding-top: 3rem;
+}
+
+.projects_cards {
+  width: 100%;
+  align-content: center;
+  justify-items: center;
+  position: relative;
+  @apply grid grid-cols-1 md:grid-cols-3 gap-4;
 }
