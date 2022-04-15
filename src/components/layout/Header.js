@@ -1,14 +1,13 @@
+import { useEffect, useState } from 'react';
 // scripts
 import { scrollTo } from '../../assets/scripts/scrollTo';
-// hooks
-import { useToggle } from '../../hooks/useToggle';
 // styles
 import '../../assets/sass/Header.scss';
 import btn from '../../assets/sass/Button.module.scss';
 
 function Header() {
 
-  const [isMenuOpen, toggle] = useToggle(false);
+  const [isNavVisibility, setNavVisibility] = useState(false);
 
   const sectionList = [
     {
@@ -27,29 +26,39 @@ function Header() {
 
   function scrollToView(id) {
     scrollTo(id);
-    return isMenuOpen ? setTimeout((toggle), 400) : undefined;
   }
+
+  useEffect(() => {
+    const scrollListener = () => {
+      window.scrollY > 70 ? setNavVisibility(true) : setNavVisibility(false);
+    }
+
+    window.addEventListener('scroll', scrollListener);
+
+    return () => {
+      window.removeEventListener('scroll', scrollListener)
+    }
+  }, []);
 
   return (
     <header>
-      <div className='c_logo'>
+      <div className='c_logo absolute md:relative'>
         Portfólio
       </div>
 
-      <nav>
-        <div className={isMenuOpen ? "fixed inset-0 c_menu_sm" : undefined}>
-          <button className={isMenuOpen ? "text-white absolute" : "hidden"} onClick={toggle}>Close</button>
-          <ul className={isMenuOpen ? "flex flex-col items-center justify-center h-full list-none gap-6" : "hidden md:flex list-none gap-4"}>
+      <nav className={isNavVisibility ? "block" : "invisible md:block md:visible"}>
+        <div className={isNavVisibility ? "c_menu" : undefined}>
+          <ul className={isNavVisibility ? "flex flex-col items-center justify-center list-none gap-6" : "hidden md:flex md:flex-row list-none gap-4"}>
             {sectionList.map((section) => (
               <li onClick={() => scrollToView(section.id)}
-                className={isMenuOpen ? `${btn.btn_li} ${btn.sm}` : `${btn.btn_li} ${btn.md}`}>
+                className={isNavVisibility ? `${btn.btn_li} ${btn.sm}` : `${btn.btn_li} ${btn.md}`}>
                 {section.name}
               </li>
             ))}
           </ul>
         </div>
       </nav>
-      <button className="md:hidden" onClick={toggle}>Menu</button>
+
     </header>
   );
 }

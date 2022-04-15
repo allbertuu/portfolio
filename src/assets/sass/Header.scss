@@ -16,7 +16,11 @@ header {
     color: white;
   }
 
-  .c_menu_sm {
+  .c_menu {
+    @apply fixed top-14 right-0
+    rounded-l-lg p-2;
     background: #052131e5;
+
+    transition: all ease-in-out .3s;
   }
 }
