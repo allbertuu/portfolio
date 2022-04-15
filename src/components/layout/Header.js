@@ -1,6 +1,3 @@
-// // components
-// import NavItem from '../../components/NavItem';
-
 // scripts
 import { scrollTo } from '../../assets/scripts/scrollTo';
 // hooks
