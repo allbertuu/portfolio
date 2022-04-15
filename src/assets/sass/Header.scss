@@ -6,22 +6,9 @@ header {
   align-items: center;
   justify-content: space-around;
 
-  &.headerVisible {
-    background: linear-gradient(70deg, #7e1a35, $primary-color);
-    @media (min-width: 760px) {
-      & {
-        background: linear-gradient(70deg, #671b34, $primary-color);
-      }
-    }
-
-    transition: all ease .5s;
-
-    @apply shadow-md;
-  }
-
   height: 70px;
   width: 100%;
-  position: fixed;
+  position: absolute;
   top: 0;
   z-index: 99;
 
