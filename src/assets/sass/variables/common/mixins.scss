@@ -1,0 +1,5 @@
+$timing-function: cubic-bezier(0.86, 0.03, 0.09, 0.95);
+
+@mixin animationText($delay, $name) {
+  animation: 2s $timing-function $delay 2 both alternate-reverse $name;
+}

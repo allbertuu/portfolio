@@ -33,10 +33,10 @@
   align-items: center;
   justify-content: space-evenly;
 
-  box-shadow: 0 2px 15px 2px var(--shadow-dark);
+  @apply shadow-md;
 
   &:hover {
-    background-color: $primary-color-dark;
+    background-color: $secondary-color;
     justify-content: normal;
   }
 }
@@ -46,7 +46,7 @@
   width: 75%;
   border-radius: 0 0 30px 30px;
   margin: 0 auto;
-  background-color: $primary-color-dark;
+  background-color: $secondary-color;
   transition: all 0.3s;
   position: absolute;
   top: 0;
@@ -59,7 +59,7 @@
 .mainImg {
   width: 50%;
   height: 35%;
-  background-color: $primary-color-dark;
+  background-color: $secondary-color;
   border-radius: 20px;
   // display: flex;
   // justify-content: center;
