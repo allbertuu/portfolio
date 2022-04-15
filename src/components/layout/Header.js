@@ -5,12 +5,12 @@ import { useToggle } from '../../hooks/useToggle';
 // styles
 import '../../assets/sass/Header.scss';
 
-function Header({headerVisibility}) {
+function Header() {
 
   const [isMenuOpen, toggle] = useToggle();
 
   return (
-    <header className={headerVisibility ? 'headerVisible' : undefined}>
+    <header>
       <div className='c_logo'>
         Portfólio
       </div>
