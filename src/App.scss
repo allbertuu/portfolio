@@ -7,7 +7,7 @@
 // Colors
 @import "./assets/sass/variables/colors/colors.scss";
 // Typography
-@import "./assets/sass/variables/typography/headings.scss";
+@import "./assets/sass/variables/typography/typography.scss";
 // Commons
 @import "./assets/sass/variables/common/mixins.scss";
 @import "./assets/sass/variables/common/keyframes.scss";
@@ -22,25 +22,48 @@ body {
 }
 
 section {
-  height: 100vh;
+  min-height: 100vh;
   @apply grid grid-cols-1;
 }
 
 #s_welcome,
-#s_aboutMe {
-  @apply px-9 md:px-16 lg:px-32;
+#s_aboutMe,
+#s_projects {
+  @apply px-9 md:px-16 lg:px-20;
 }
-
+// Welcome
 #s_welcome {
   align-content: center;
   justify-items: center;
   position: relative;
-  @apply md:grid-cols-2 
-  gap-4;
+  @apply md:grid-cols-2;
 
   background: $primary-bg;
 }
 
+.c_whoIAm {
+  @apply flex flex-col items-center gap-6;
+
+  .c_text {
+    @apply text-white text-center;
+
+    .item_1 {
+      @include animationText(0.2s, scaleUpH3);
+    }
+    .item_2 {
+      line-height: 2.6rem;
+      @include animationText(2.2s, scaleUpH1);
+    }
+    .item_3 {
+      @include animationText(4s, scaleUpH2);
+    }
+  }
+
+  button {
+    max-width: fit-content;
+  }
+}
+// About me
 #s_aboutMe {
   background: $secondary-color;
   box-shadow: inset 5px 5px 20px 3px var(--shadow-dark);
@@ -89,43 +112,21 @@ section {
   }
 }
 
-.c_whoIAm {
-  @apply flex flex-col items-center gap-6;
-
-  .c_text {
-    @apply text-white text-center;
-
-    .item_1 {
-      font-size: $h3;
-      @include animationText(0.2s, scaleUpH3);
-    }
-    .item_2 {
-      font-size: $h1;
-      line-height: 2.6rem;
-      @include animationText(2.2s, scaleUpH1);
-    }
-    .item_3 {
-      font-size: $h2;
-      @include animationText(4s, scaleUpH2);
-    }
-  }
-
-  button {
-    max-width: fit-content;
-  }
-}
-
-//Projects
+// Projects
 #s_projects {
-  width: 100%;
   background: $primary-bg;
-  padding-top: 3rem;
-}
+  @apply py-12;
+  height: fit-content;
 
-.projects_cards {
-  width: 100%;
-  align-content: center;
-  justify-items: center;
-  position: relative;
-  @apply grid grid-cols-1 md:grid-cols-3 gap-4;
+  .c_projects_cards {
+    @apply flex flex-col lg:flex-row items-center justify-evenly
+    gap-10;
+
+    .card {
+      min-width: 280px;
+      max-width: 500px;
+      min-height: 240px;
+      max-height: 240px;
+    }
+  }
 }

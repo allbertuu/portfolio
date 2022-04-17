@@ -76,7 +76,7 @@ function App() {
         </section>
 
         <section id="s_projects">
-          <div className='projects_cards delaySmallReveal'>
+          <div className='c_projects_cards delaySmallReveal'>
             <CardProject title='Sneakers' img={0} />
             <CardProject title='Netflix Clone' img={0} />
             <CardProject title='Letmeask' img={0} />
