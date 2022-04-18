@@ -76,10 +76,15 @@ section {
 
   .box {
     @apply w-64 lg:w-80
-    h-64 lg:h-80;
+    h-64 lg:h-80
+    flex justify-center items-center;
     border-radius: 0.6rem;
     background: linear-gradient(88deg, $primary-color-dark 20%, $primary-color-darker 80%);
     box-shadow: 11px 11px 22px #041a26, -11px -11px 22px #041824;
+
+    img {
+      width: 60%;
+    }
   }
 
   .c_aboutMe {

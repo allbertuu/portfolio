@@ -4,9 +4,10 @@ import sr from './assets/scripts/ScrollReveal';
 import { initScrollReveal } from './assets/scripts/initScrollReveal';
 
 import Header from './components/layout/Header';
-
 import Button from './components/Button';
 import CardProject from './components/CardProject';
+
+import imgLogo from './assets/imgs/logo-transparent.png';
 
 // styles
 import './App.scss';
@@ -58,7 +59,7 @@ function App() {
 
         <section id='s_aboutMe'>
           <div className="box delaySmallReveal intervalCardReveal">
-
+            <img src={imgLogo} alt="Second logo" />
           </div>
           <div className="c_aboutMe intervalCardReveal">
             <h2 className="delaySmallReveal">

@@ -13,6 +13,12 @@ header {
   z-index: 99;
 
   .c_logo {
+    @apply flex items-center gap-2;
+
+    img {
+      @apply h-8 md:h-9;
+    }
+
     color: white;
   }
 

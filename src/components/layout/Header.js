@@ -4,6 +4,8 @@ import { scrollTo } from '../../assets/scripts/scrollTo';
 // styles
 import '../../assets/sass/Header.scss';
 import btn from '../../assets/sass/Button.module.scss';
+// imgs and icons
+import imgLogo from '../../assets/imgs/logo-transparent.png';
 
 function Header() {
 
@@ -43,6 +45,7 @@ function Header() {
   return (
     <header>
       <div className='c_logo absolute md:relative'>
+        <img src={imgLogo} alt="Logo" />
         Portfólio
       </div>
 
