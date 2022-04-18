@@ -21,11 +21,6 @@ body {
   }
 }
 
-section {
-  min-height: 100vh;
-  @apply grid grid-cols-1;
-}
-
 #s_welcome,
 #s_aboutMe,
 #s_projects {
@@ -36,11 +31,11 @@ section {
   align-content: center;
   justify-items: center;
   position: relative;
-  @apply md:grid-cols-2;
+  @apply grid grid-cols-1 md:grid-cols-2;
 
+  height: 100vh;
   background: $primary-bg;
 }
-
 .c_whoIAm {
   @apply flex flex-col items-center gap-6;
 
@@ -66,12 +61,12 @@ section {
 // About me
 #s_aboutMe {
   background: $secondary-color;
-  box-shadow: inset 5px 5px 20px 3px var(--shadow-dark);
-  align-content: center;
-  justify-items: center;
-  position: relative;
-  @apply md:grid-cols-2
-  gap-12;
+  box-shadow: inset 5px 5px 20px 3px $shadow-dark;
+
+  @apply grid grid-cols-1 md:grid-cols-2 items-center justify-items-center
+  gap-12 md:gap-10 lg:gap-0
+  py-20 lg:py-32;
+
   user-select: text;
 
   .box {
@@ -116,12 +111,10 @@ section {
     }
   }
 }
-
 // Projects
 #s_projects {
   background: $primary-bg;
-  @apply py-12;
-  height: fit-content;
+  @apply py-32;
 
   .c_projects_cards {
     @apply flex flex-col lg:flex-row items-center justify-evenly
@@ -134,4 +127,9 @@ section {
       max-height: 240px;
     }
   }
+}
+// Footer
+footer {
+  background-color: $secondary-color;
+  @apply p-8;
 }
