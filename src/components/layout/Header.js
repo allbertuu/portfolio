@@ -52,9 +52,8 @@ function Header() {
       <nav className={isNavVisibility ? "block" : "invisible md:block md:visible"}>
         <div className={isNavVisibility ? "c_menu" : undefined}>
           <ul className={isNavVisibility ? "flex flex-col items-center justify-center list-none gap-6" : "hidden md:flex md:flex-row list-none gap-4"}>
-            {sectionList.map((section) => (
-              <li onClick={() => scrollToView(section.id)}
-                className={isNavVisibility ? `${btn.btn_li} ${btn.sm}` : `${btn.btn_li} ${btn.md}`}>
+            {sectionList.map((section, index) => (
+              <li key={index} onClick={() => scrollToView(section.id)} className={isNavVisibility ? `${btn.btn_li} ${btn.sm}` : `${btn.btn_li} ${btn.md}`}>
                 {section.name}
               </li>
             ))}
