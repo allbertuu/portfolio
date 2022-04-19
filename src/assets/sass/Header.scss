@@ -16,10 +16,13 @@ header {
     @apply flex items-center gap-2;
 
     img {
-      @apply h-8;
+      @apply h-12 pt-2 md:h-8 md:pt-0;
     }
 
-    color: white;
+    span {
+      color: white;
+      @apply hidden md:block;
+    }
   }
 
   .c_menu {
