@@ -6,6 +6,10 @@ import '../../assets/sass/Header.scss';
 import btn from '../../assets/sass/Button.module.scss';
 // imgs and icons
 import imgLogo from '../../assets/imgs/logo-transparent.png';
+import HomeIcon from '@mui/icons-material/Home';
+// import LocalPostOfficeIcon from '@mui/icons-material/LocalPostOffice';
+import OfflineBoltIcon from '@mui/icons-material/OfflineBolt';
+import AutoAwesomeMotionIcon from '@mui/icons-material/AutoAwesomeMotion';
 
 function Header() {
 
@@ -14,15 +18,18 @@ function Header() {
   const sectionList = [
     {
       name: 'Início',
-      id: 's_welcome'
+      id: 's_welcome',
+      icon: <HomeIcon/>
     },
     {
       name: 'Projetos',
-      id: 's_projects'
+      id: 's_projects',
+      icon: <AutoAwesomeMotionIcon/>
     },
     {
       name: 'Habilidades',
-      id: 's_skills'
+      id: 's_skills',
+      icon: <OfflineBoltIcon/>
     }
   ]
 
@@ -46,7 +53,7 @@ function Header() {
     <header>
       <div className='c_logo absolute md:relative'>
         <img src={imgLogo} alt="Logo" />
-        Portfólio
+        <span>Portfólio</span>
       </div>
 
       <nav className={isNavVisibility ? "block" : "invisible md:block md:visible"}>
@@ -54,7 +61,12 @@ function Header() {
           <ul className={isNavVisibility ? "flex flex-col items-center justify-center list-none gap-6" : "hidden md:flex md:flex-row list-none gap-4"}>
             {sectionList.map((section, index) => (
               <li key={index} onClick={() => scrollToView(section.id)} className={isNavVisibility ? `${btn.btn_li} ${btn.sm}` : `${btn.btn_li} ${btn.md}`}>
-                {section.name}
+                {isNavVisibility &&
+                  section.icon
+                }
+                {!isNavVisibility &&
+                  section.name
+                }
               </li>
             ))}
           </ul>
