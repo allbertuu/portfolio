@@ -114,7 +114,12 @@ body {
 // Projects
 #s_projects {
   background: $primary-bg;
-  @apply py-32;
+  @apply pt-20 pb-32 flex flex-col gap-16;
+
+  h1 {
+    color: white;
+    text-align: center;
+  }
 
   .c_projects_cards {
     @apply flex flex-col lg:flex-row items-center justify-evenly

@@ -77,6 +77,7 @@ function App() {
         </section>
 
         <section id="s_projects">
+          <h1>Projetos</h1>
           <div className='c_projects_cards delaySmallReveal'>
             <CardProject title='Sneakers' img={0} />
             <CardProject title='Netflix Clone' img={0} />
