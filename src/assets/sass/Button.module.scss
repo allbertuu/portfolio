@@ -21,29 +21,31 @@
   position: relative;
   overflow: hidden;
   border-radius: 0.3rem;
+
   text-decoration: none;
+  font-size: inherit;
+  font-family: inherit;
+
   cursor: pointer;
 }
 
 .btn_faixa {
   @extend .btn;
-  padding: 0.8em 1.8em;
-
-  height: 50px;
+  padding: 0.8em 1.2em;
 
   text-align: center;
   text-transform: uppercase;
-  font-size: 1rem;
   color: white;
 
   transition: 0.3s;
   z-index: 1;
   opacity: 0;
+  @apply shadow-lg;
 
   animation: show 1.5s forwards 6s;
 
   &:hover {
-    color: $primary-color;
+    color: white;
     @apply shadow-2xl;
   }
 
@@ -55,7 +57,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) rotate(20deg);
-    background: white;
+    background: $primary-color;
     transition: .5s ease;
     display: block;
     z-index: -1;
@@ -75,7 +77,7 @@
     left: 0;
     height: 2px;
     width: 2rem;
-    background-color: white;
+    background-color: $primary-color;
     transition: .5s ease;
     animation: animate ease forwards 3s 6.1s;
   }
@@ -83,15 +85,11 @@
 
 .btn_li {
   @extend .btn;
-  padding: 0.5rem 1rem;
+  padding: 0.4rem 0.8rem;
 
   color: white;
 
-  font-family: inherit;
-
   &.md {
-    font-size: 1rem;
-  
     &::before {
       content: "";
       position: absolute;
@@ -99,7 +97,7 @@
       top: 0;
       width: 100%;
       height: 100%;
-      background-color: white;
+      background-color: $primary-color;
       transform: translateX(-100%);
       transition: all 0.3s;
       opacity: 0;
@@ -107,7 +105,7 @@
     }
   
     &:hover {
-      color: $primary-color;
+      color: white;
       @apply shadow-xl;
   
       &::before {
@@ -118,8 +116,6 @@
   }
 
   &.sm {
-    font-size: 1rem;
-
     border-bottom: 1px solid $primary-color;
   
     &::before {

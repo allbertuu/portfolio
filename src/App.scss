@@ -15,6 +15,9 @@
 body {
   user-select: none;
   font-family: "Titillium Web", sans-serif;
+  font-size: 1.1rem;
+  color: white;
+
   ::selection {
     color: white;
     background-color: $primary-color;
@@ -31,22 +34,21 @@ body {
   align-content: center;
   justify-items: center;
   position: relative;
-  @apply grid grid-cols-1 md:grid-cols-2;
+  @apply grid grid-cols-1 lg:grid-cols-2;
 
   height: 100vh;
-  background: $primary-bg;
+  background: $secondary-bg;
 }
 .c_whoIAm {
   @apply flex flex-col items-center gap-6;
 
   .c_text {
-    @apply text-white text-center;
+    @apply flex flex-col gap-1 items-center lg:items-start;
 
     .item_1 {
       @include animationText(0.2s, scaleUpH3);
     }
     .item_2 {
-      line-height: 2.6rem;
       @include animationText(2.2s, scaleUpH1);
     }
     .item_3 {
@@ -56,11 +58,12 @@ body {
 
   button {
     max-width: fit-content;
+    font-size: 1rem;
   }
 }
 // About me
 #s_aboutMe {
-  background: $secondary-color;
+  background: $secondary-bg;
   box-shadow: inset 5px 5px 20px 3px $shadow-dark;
 
   @apply grid grid-cols-1 md:grid-cols-2 items-center justify-items-center
@@ -85,10 +88,7 @@ body {
   .c_aboutMe {
     @apply md:justify-self-start;
 
-    h2 {
-      color: white;
-      @apply text-3xl lg:text-4xl
-      uppercase;
+    h1 {
       margin-bottom: 1.5rem;
       padding-left: 0.5rem;
 

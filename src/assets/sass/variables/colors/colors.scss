@@ -6,6 +6,8 @@ $primary-color-dark: #a30932;
 $primary-color-darker: #a10831d0;
 
 $secondary-color: #041a27;
+$secondary-color-dark: #041722;
 $white-text: rgba(255, 255, 255, 0.911);
 
-$primary-bg: linear-gradient(70deg, #412130, $primary-color);
+$primary-bg: linear-gradient(70deg, #412130, $primary-color-dark);
+$secondary-bg: linear-gradient(240deg, $secondary-color-dark, $secondary-color);
