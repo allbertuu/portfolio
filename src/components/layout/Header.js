@@ -5,7 +5,7 @@ import { scrollTo } from '../../assets/scripts/scrollTo';
 import '../../assets/sass/Header.scss';
 import btn from '../../assets/sass/Button.module.scss';
 // imgs and icons
-import imgLogo from '../../assets/imgs/logo-transparent.png';
+import imgLogo from '../../assets/imgs/logo.png';
 import HomeIcon from '@mui/icons-material/Home';
 // import LocalPostOfficeIcon from '@mui/icons-material/LocalPostOffice';
 import OfflineBoltIcon from '@mui/icons-material/OfflineBolt';
