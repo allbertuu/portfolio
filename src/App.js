@@ -62,9 +62,9 @@ function App() {
             <img src={imgLogo} alt="Second logo" />
           </div>
           <div className="c_aboutMe intervalCardReveal">
-            <h2 className="delaySmallReveal">
+            <h1 className="delaySmallReveal section_title">
               Sobre mim
-            </h2>
+            </h1>
             <p className="delayMediumReveal">
               Meu nome é Alberto Albuquerque, tenho 19 anos e sou desenvolvedor Front-end. <br />
               Meu início no mundo da programação se deu em 2019, onde tive meu primeiro contato com uma
@@ -77,7 +77,7 @@ function App() {
         </section>
 
         <section id="s_projects">
-          <h1>Projetos</h1>
+          <h1 className='section_title'>Projetos</h1>
           <div className='c_projects_cards delaySmallReveal'>
             <CardProject title='Sneakers' img={0} />
             <CardProject title='Netflix Clone' img={0} />

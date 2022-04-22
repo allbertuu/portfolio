@@ -1,12 +1,23 @@
 // Headings
 h1 {
-  font-size: 2.25rem;
+  font-size: 2rem;
+  line-height: 1;
+  @apply sm:text-4xl lg:text-5xl;
+  
+  &.section_title {
+    font-size: 2.25rem;
+    @media (min-width: 1024px) {
+      & {
+        font-size: 2.5rem;
+      }
+    }
+  }
 }
 
 h2 {
-  font-size: 1.5rem;
+  @apply text-2xl;
 }
 
 h3 {
-  font-size: 1.25rem;
+  @apply text-xl;
 }
