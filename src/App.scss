@@ -34,7 +34,8 @@ footer {
   align-content: center;
   justify-items: center;
   position: relative;
-  @apply grid grid-cols-1 lg:grid-cols-2;
+  @apply grid grid-cols-1 lg:grid-cols-2
+  gap-4;
 
   height: 100vh;
   background: $secondary-bg;
@@ -64,8 +65,7 @@ footer {
 
   > img {
     @apply hidden lg:block;
-    min-width: fit-content;
-    height: 600px;
+    max-height: 550px;
   }
 }
 // About me
