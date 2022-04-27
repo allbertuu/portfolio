@@ -9,8 +9,7 @@
 // Typography
 @import "./assets/sass/variables/typography/typography.scss";
 // Commons
-@import "./assets/sass/variables/common/mixins.scss";
-@import "./assets/sass/variables/common/keyframes.scss";
+@import "./assets/sass/variables/common/common.scss";
 
 body {
   user-select: none;
@@ -26,7 +25,8 @@ body {
 
 #s_welcome,
 #s_aboutMe,
-#s_projects {
+#s_projects,
+footer {
   @apply px-9 md:px-16 lg:px-20;
 }
 // Welcome
@@ -38,27 +38,34 @@ body {
 
   height: 100vh;
   background: $secondary-bg;
-}
-.c_whoIAm {
-  @apply flex flex-col items-center gap-6;
 
-  .c_text {
-    @apply flex flex-col gap-1 items-center lg:items-start;
+  :first-child {
+    @apply flex flex-col items-center justify-center gap-6;
 
-    .item_1 {
-      @include animationText(0.2s, scaleUpH3);
+    div {
+      @apply flex flex-col gap-1 items-center lg:items-start;
+
+      .item_1 {
+        @include animationText(0.2s, scaleUpMedium);
+      }
+      .item_2 {
+        @include animationText(2.2s, scaleUpSmall);
+      }
+      .item_3 {
+        @include animationText(4s, scaleUpMedium);
+      }
     }
-    .item_2 {
-      @include animationText(2.2s, scaleUpH1);
-    }
-    .item_3 {
-      @include animationText(4s, scaleUpH2);
+
+    button {
+      max-width: fit-content;
+      font-size: 1rem;
     }
   }
 
-  button {
-    max-width: fit-content;
-    font-size: 1rem;
+  > img {
+    @apply hidden lg:block;
+    min-width: fit-content;
+    height: 600px;
   }
 }
 // About me
@@ -136,5 +143,15 @@ body {
 // Footer
 footer {
   background-color: $secondary-color;
-  @apply p-8;
+  @apply flex justify-around flex-wrap gap-1
+  py-10;
+
+  div {
+    @apply flex items-center gap-2;
+    p {
+    }
+    img {
+      height: 26px;
+    }
+  }
 }

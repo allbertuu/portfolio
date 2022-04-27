@@ -2,12 +2,14 @@ import { useEffect } from 'react';
 // scripts
 import sr from './assets/scripts/ScrollReveal';
 import { initScrollReveal } from './assets/scripts/initScrollReveal';
-
+// components
 import Header from './components/layout/Header';
 import Button from './components/Button';
 import CardProject from './components/CardProject';
-
-import imgLogo from './assets/imgs/logo-transparent.png';
+// imgs and icons
+import imgLogoTransparent from './assets/imgs/logo-transparent.png';
+import imgLogo from './assets/imgs/logo.png';
+import profileImg from './assets/imgs/developer.png';
 
 // styles
 import './App.scss';
@@ -44,22 +46,20 @@ function App() {
 
       <main>
         <section id='s_welcome'>
-          <div className="c_whoIAm">
-            <div className="c_text">
+          <div>
+            <div>
               <h3 className="item_1">Olá, me chamo</h3>
               <h1 className="item_2">Alberto Albuquerque</h1>
               <h2 className="item_3">Desenvolvedor Front-end</h2>
             </div>
             <Button text="Quero conhecê-lo!" to='s_aboutMe' />
           </div>
-          <div className=''>
-
-          </div>
+          <img src={profileImg} alt="" />
         </section>
 
         <section id='s_aboutMe'>
           <div className="box delaySmallReveal intervalCardReveal">
-            <img src={imgLogo} alt="Second logo" />
+            <img src={imgLogoTransparent} alt="White logo" />
           </div>
           <div className="c_aboutMe intervalCardReveal">
             <h1 className="delaySmallReveal section_title">
@@ -86,7 +86,13 @@ function App() {
         </section>
       </main>
 
-      <footer></footer>
+      <footer>
+        <p>Made by Alberto Albuquerque</p>
+        <div>
+          <p>Powered by</p>
+          <img src={imgLogo} alt="White logo" />
+        </div>
+      </footer>
     </>
   );
 }
