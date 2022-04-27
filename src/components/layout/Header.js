@@ -33,7 +33,7 @@ function Header() {
     }
   ]
 
-  function scrollToView(id) {
+  function scrollToSection(id) {
     scrollTo(id);
   }
 
@@ -60,7 +60,7 @@ function Header() {
         <div className={isNavVisibility ? "c_menu" : undefined}>
           <ul className={isNavVisibility ? "flex flex-col items-center justify-center list-none gap-6" : "hidden md:flex md:flex-row list-none gap-4"}>
             {sectionList.map((section, index) => (
-              <li key={index} onClick={() => scrollToView(section.id)} className={isNavVisibility ? `${btn.btn_li} ${btn.sm}` : `${btn.btn_li} ${btn.md}`}>
+              <li key={index} onClick={() => scrollToSection(section.id)} className={isNavVisibility ? `${btn.btn_li} ${btn.sm}` : `${btn.btn_li} ${btn.md}`}>
                 {isNavVisibility ? section.icon : section.name}
               </li>
             ))}
