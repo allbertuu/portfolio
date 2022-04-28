@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 // scripts
 import sr, { initScrollReveal } from './assets/scripts/ScrollReveal';
+import projectsList from './assets/scripts/projectsList';
 // components
 import Header from './components/layout/Header';
 import Button from './components/Button';
@@ -15,7 +16,6 @@ import './App.scss';
 function App() {
 
   useEffect(() => {
-    //fetch API Github pinned projects
     initScrollReveal();
 
     const item_1 = {
@@ -77,9 +77,9 @@ function App() {
         <section id="s_projects">
           <h1 className='section_title'>Projetos</h1>
           <div className='c_projects_cards delaySmallReveal'>
-            <CardProject title='Sneakers' img={0} />
-            <CardProject title='Netflix Clone' img={0} />
-            <CardProject title='Letmeask' img={0} />
+            {projectsList.map((project, index) => (
+              <CardProject title={project.name} img={project.overviewImg} key={index} />
+            ))}
           </div>
         </section>
       </main>

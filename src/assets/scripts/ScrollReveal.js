@@ -13,5 +13,5 @@ export function initScrollReveal() {
   sr.reveal(".delayMediumReveal", { delay: 400 });
   sr.reveal(".delayLargeReveal", { delay: 600 });
   sr.reveal(".delayExtraBigReveal", { delay: 800 });
-  sr.reveal(".intervalCardReveal", { interval: 800 });
+  sr.reveal(".intervalCardReveal", { interval: 700 });
 }
