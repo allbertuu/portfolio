@@ -1,7 +1,6 @@
 import { useEffect } from 'react';
 // scripts
-import sr from './assets/scripts/ScrollReveal';
-import { initScrollReveal } from './assets/scripts/initScrollReveal';
+import sr, { initScrollReveal } from './assets/scripts/ScrollReveal';
 // components
 import Header from './components/layout/Header';
 import Button from './components/Button';
@@ -10,7 +9,6 @@ import CardProject from './components/CardProject';
 import imgLogoTransparent from './assets/imgs/logo-transparent.png';
 import imgLogo from './assets/imgs/logo.png';
 import profileImg from './assets/imgs/developer.png';
-
 // styles
 import './App.scss';
 
