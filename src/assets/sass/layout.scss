@@ -1,0 +1,15 @@
+#s_welcome,
+#s_aboutMe,
+#s_projects,
+footer {
+  @apply px-9 md:px-16 lg:px-20;
+}
+
+#s_welcome {
+  align-content: center;
+  justify-items: center;
+  position: relative;
+  @apply grid grid-cols-1 lg:grid-cols-2
+    gap-4;
+  height: 100vh;
+}

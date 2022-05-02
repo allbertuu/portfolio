@@ -1,4 +1,4 @@
-// TailwindCSS
+// TailwindCSS framework
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -10,6 +10,8 @@
 @import "./assets/sass/variables/typography/typography.scss";
 // Commons
 @import "./assets/sass/variables/common/common.scss";
+// Layout
+@import "./assets/sass/layout.scss";
 
 body {
   user-select: none;
@@ -23,21 +25,8 @@ body {
   }
 }
 
-#s_welcome,
-#s_aboutMe,
-#s_projects,
-footer {
-  @apply px-9 md:px-16 lg:px-20;
-}
 // Welcome
 #s_welcome {
-  align-content: center;
-  justify-items: center;
-  position: relative;
-  @apply grid grid-cols-1 lg:grid-cols-2
-  gap-4;
-
-  height: 100vh;
   background: $secondary-bg;
 
   :first-child {
@@ -68,6 +57,7 @@ footer {
     max-height: 550px;
   }
 }
+
 // About me
 #s_aboutMe {
   background: $secondary-bg;
@@ -118,6 +108,7 @@ footer {
     }
   }
 }
+
 // Projects
 #s_projects {
   background: $primary-bg;
@@ -131,25 +122,39 @@ footer {
   .c_projects_cards {
     @apply flex flex-col lg:flex-row items-center justify-evenly
     gap-10;
-
-    .card {
-      min-width: 280px;
-      max-width: 500px;
-      min-height: 240px;
-      max-height: 240px;
-    }
   }
 }
+
 // Footer
 footer {
   background-color: $secondary-color;
   @apply flex justify-around flex-wrap gap-1
   py-10;
 
+  a {
+    transition: all ease .4s;
+    
+    &::after {
+      content: "";
+      background-color: $primary-color;
+      position: relative;
+      display: block;
+      width: 10%;
+      height: 0.2rem;
+      transition: all ease .4s;
+    }
+
+    &:hover {
+      color: $primary-color;
+      &::after {
+        width: 100%;
+      }
+    }
+  }
+
   div {
     @apply flex items-center gap-2;
-    p {
-    }
+
     img {
       height: 26px;
     }
