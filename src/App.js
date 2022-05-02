@@ -85,7 +85,7 @@ function App() {
       </main>
 
       <footer>
-        <p>Made by Alberto Albuquerque</p>
+        <p>Made by <a href="https://www.linkedin.com/in/albertov-albuquerque">Alberto Albuquerque</a></p>
         <div>
           <p>Powered by</p>
           <img src={imgLogo} alt="White logo" />
