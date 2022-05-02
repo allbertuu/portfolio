@@ -1,19 +1,26 @@
 /*
 ** Headings
 */
-#s_welcome h1 {
-  font-size: 2rem;
-  line-height: 1;
-  @apply sm:text-4xl lg:text-5xl;
+#s_welcome {
+  h1 {
+    font-size: 2rem;
+    line-height: 1;
+    @apply sm:text-5xl xl:text-6xl;
+  }
+
+  h2 {
+    @apply text-2xl sm:text-3xl xl:text-4xl;
+  }
+
+  h3 {
+    @apply text-xl sm:text-2xl xl:text-3xl;
+  }
 }
 
-section h1 {
-  font-size: 2.25rem;
-  @media (min-width: 1024px) {
-    & {
-      font-size: 2.5rem;
-    }
-  }
+h1 {
+  font-size: 2rem;
+  line-height: 1;
+  @apply sm:text-5xl;
 }
 
 h2 {
@@ -21,5 +28,13 @@ h2 {
 }
 
 h3 {
-  @apply text-xl;
+  @apply text-2xl;
+}
+
+p {
+  @apply text-base lg:text-lg xl:text-xl;
+}
+
+button {
+  @apply text-lg sm:text-xl lg:text-lg xl:text-xl;
 }
