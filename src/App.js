@@ -85,10 +85,12 @@ function App() {
       </main>
 
       <footer>
-        <p>Made by <a href="https://www.linkedin.com/in/albertov-albuquerque">Alberto Albuquerque</a></p>
         <div>
-          <p>Powered by</p>
-          <img src={imgLogo} alt="White logo" />
+          <p>Made by <a href="https://www.linkedin.com/in/albertov-albuquerque">Alberto Vinícius A. dos Santos</a></p>
+          <div>
+            <p>Powered by</p>
+            <img src={imgLogo} alt="White logo" />
+          </div>
         </div>
       </footer>
     </>
