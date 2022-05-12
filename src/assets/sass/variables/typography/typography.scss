@@ -18,7 +18,7 @@
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 2.25rem;
   line-height: 1;
   @apply sm:text-5xl;
 }
@@ -28,7 +28,7 @@ h2 {
 }
 
 h3 {
-  @apply text-2xl;
+  @apply text-xl sm:text-2xl;
 }
 
 p {
