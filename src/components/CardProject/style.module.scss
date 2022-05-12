@@ -10,95 +10,95 @@
   width: 280px;
   height: 240px;
 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-
   @apply shadow-lg;
 
   &:hover {
     background-color: $secondary-color;
-    justify-content: normal;
   }
 }
 
 .blob {
   height: 10px;
-  width: 75%;
-  border-radius: 0 0 30px 30px;
-  margin: 0 auto;
-  background-color: $secondary-color;
-  transition: all 0.3s;
   position: absolute;
   top: 0;
+  left: 10%;
+  right: 10%;
 
-  .card:hover > & {
+  border-radius: 0 0 30px 30px;
+  background-color: $secondary-color;
+  transition: all 0.3s;
+
+  .container:hover > & {
     height: 0;
   }
 }
 
-a.c_mainImg {
-  display: block;
-  position: relative;
+.c_logo {
   width: 110px;
   height: 100px;
+  margin: 45px auto 20px;
+
   background-color: $secondary-color;
   border-radius: 20px;
-  
-  transition: all ease-in-out 0.4s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-  &:hover {
-    cursor: pointer;
+  .container:hover > & {
+    display: none;
   }
 
   img {
-    width: 100%;
+    width: 75px;
+  }
+}
+
+.c_mainImg {
+  display: none;
+  width: 0;
+  transition: all ease 0.3s;
+
+  .container:hover > & {
+    display: block;
+    height: 70%;
   }
 
-  .card:hover > & {
+  > img {
     width: 100%;
-    min-height: 170px;
-    border-radius: 10px;
-    background-color: transparent;
+    height: 100%;
+    cursor: pointer;
+  }
 
-    img {
-      max-height: 170px;
-    }
+  :nth-child(2n) {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
   }
 }
 
 .title {
-  display: block;
-  padding: 1rem auto;
-
   text-align: center;
   font-weight: 600;
   color: $secondary-color;
-  @apply lg:text-xl 
-  uppercase;
-  transition: all 0.1s;
+  @apply uppercase;
 
-  .card:hover > & {
+  .container:hover > & {
     display: none;
-    position: absolute;
-    transition: all 0.5s;
   }
 }
 
 .c_icons {
   display: none;
-  transition: all 0.75s;
-  position: absolute;
-  bottom: 1rem;
-
+  height: 30%;
+  
+  .container:hover > & {
+    @apply flex justify-center items-center gap-2;
+  }
+  
   svg {
     padding: 5px;
     cursor: pointer;
-  }
-
-  .card:hover > & {
-    display: flex;
-    gap: 0.5rem;
   }
 }
