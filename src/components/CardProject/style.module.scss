@@ -1,12 +1,14 @@
 // Colors
-@import "./variables/colors/colors.scss";
+@import "../../assets/sass/variables/colors/colors.scss";
 
-/* From cssbuttons.io by @gagan-gv */
-.card {
+.container {
   background: #f0f0f0;
   border-radius: 10px;
   transition: all 0.5s;
   position: relative;
+
+  width: 280px;
+  height: 240px;
 
   display: flex;
   flex-direction: column;
@@ -36,23 +38,33 @@
   }
 }
 
-.mainImg {
-  width: 40%;
-  min-height: 100px;
+a.c_mainImg {
+  display: block;
+  position: relative;
+  width: 110px;
+  height: 100px;
   background-color: $secondary-color;
   border-radius: 20px;
-  // display: flex;
-  // justify-content: center;
-  // align-items: center;
+  
   transition: all ease-in-out 0.4s;
-  cursor: pointer;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  img {
+    width: 100%;
+  }
 
   .card:hover > & {
     width: 100%;
     min-height: 170px;
     border-radius: 10px;
-    // background: url();
-    background-color: white;
+    background-color: transparent;
+
+    img {
+      max-height: 170px;
+    }
   }
 }
 

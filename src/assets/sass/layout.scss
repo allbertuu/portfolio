@@ -16,8 +16,10 @@ footer {
 
 #s_aboutMe {
   @apply grid grid-cols-1 md:grid-cols-2 items-center justify-items-center;
+  height: 100vh;
 }
 
 #s_projects {
   @apply pt-20 pb-32;
+  // height: 90vh;
 }

@@ -3,7 +3,7 @@ import { useEffect } from 'react';
 import sr, { initScrollReveal } from './assets/scripts/ScrollReveal';
 import projectsList from './assets/scripts/projectsList';
 // components
-import Header from './components/layout/Header';
+import Header from './components/Header';
 import Button from './components/Button';
 import CardProject from './components/CardProject';
 // imgs and icons
