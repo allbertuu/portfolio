@@ -2,7 +2,7 @@ import styles from './style.module.scss';
 import logoImg from '../../assets/imgs/logo.png';
 import GitHubIcon from '@mui/icons-material/GitHub';
 
-function CardProject({ title, img, url, socials }) {
+function ProjectCard({ title, img, url, socials }) {
   return (
     <div className={`${styles.container} intervalCardReveal`}>
       <span className={styles.blob} />
@@ -28,4 +28,4 @@ function CardProject({ title, img, url, socials }) {
   );
 }
 
-export default CardProject
+export default ProjectCard

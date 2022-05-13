@@ -5,7 +5,7 @@ import projectsList from './assets/scripts/projectsList';
 // components
 import Header from './components/Header';
 import Button from './components/Button';
-import CardProject from './components/CardProject';
+import ProjectCard from './components/ProjectCard';
 // imgs and icons
 import imgLogoTransparent from './assets/imgs/logo-transparent.png';
 import imgLogo from './assets/imgs/logo.png';
@@ -78,7 +78,7 @@ function App() {
           <h1 className='section_title'>Projetos</h1>
           <div className='c_projects_cards delaySmallReveal'>
             {projectsList.map((project, index) => (
-              <CardProject title={project.name} img={project.overviewImg} url={project.liveSite} socials={project.socials} key={index} />
+              <ProjectCard title={project.name} img={project.overviewImg} url={project.liveSite} socials={project.socials} key={index} />
             ))}
           </div>
         </section>
