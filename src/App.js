@@ -78,7 +78,7 @@ function App() {
           <h1 className='section_title'>Projetos</h1>
           <div className='c_projects_cards delaySmallReveal'>
             {projectsList.map((project, index) => (
-              <CardProject title={project.name} img={project.overviewImg} key={index} />
+              <CardProject title={project.name} img={project.overviewImg} url={project.liveSite} socials={project.socials} key={index} />
             ))}
           </div>
         </section>
