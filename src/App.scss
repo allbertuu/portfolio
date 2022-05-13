@@ -130,7 +130,7 @@ body {
   }
 
   .c_projects_cards {
-    @apply flex flex-col lg:flex-row items-center justify-evenly
+    @apply flex flex-col lg:flex-row flex-wrap items-center justify-evenly
     gap-10;
   }
 }
