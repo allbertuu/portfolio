@@ -1,5 +1,5 @@
 // Colors
-@import "./variables/colors/colors.scss";
+@import "../../assets/sass/variables/colors/colors.scss";
 
 @keyframes animate {
   to {
@@ -27,7 +27,7 @@
   cursor: pointer;
 }
 
-.btn_faixa {
+.faixa {
   @extend .btn;
   padding: 0.8em 1.2em;
 
@@ -81,13 +81,13 @@
   }
 }
 
-.btn_li {
+.li {
   @extend .btn;
   padding: 0.4rem 0.8rem;
 
   color: white;
 
-  &.md {
+  &_full {
     &::before {
       content: "";
       position: absolute;
@@ -113,7 +113,7 @@
     }
   }
 
-  &.sm {
+  &_icon {
     border-bottom: 1px solid $primary-color;
   
     &::before {

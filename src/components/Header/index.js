@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import { scrollTo } from '../../assets/scripts/scrollTo';
 // styles
 import styles from './style.module.scss';
-import btn from '../../assets/sass/Button.module.scss';
+import buttonStyles from '../Button/style.module.scss';
 // imgs and icons
 import imgLogo from '../../assets/imgs/logo.png';
 import HomeIcon from '@mui/icons-material/Home';
@@ -60,7 +60,7 @@ function Header() {
         <div className={isNavVisibility ? styles.c_menu : undefined}>
           <ul className={isNavVisibility ? "flex flex-col items-center justify-center list-none gap-6" : "hidden md:flex md:flex-row list-none gap-4"}>
             {sectionList.map((section, index) => (
-              <li key={index} onClick={() => scrollToSection(section.id)} className={isNavVisibility ? `${btn.btn_li} ${btn.sm}` : `${btn.btn_li} ${btn.md}`}>
+              <li key={index} onClick={() => scrollToSection(section.id)} className={isNavVisibility ? `${buttonStyles.li} ${buttonStyles.li_icon}` : `${buttonStyles.li} ${buttonStyles.li_full}`}>
                 {isNavVisibility ? section.icon : section.name}
               </li>
             ))}
