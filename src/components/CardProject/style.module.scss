@@ -7,6 +7,7 @@
   transition: all 0.5s;
   position: relative;
 
+  min-width: 280px;
   width: 280px;
   height: 240px;
 
@@ -29,7 +30,9 @@
   transition: all 0.3s;
 
   .container:hover > & {
-    height: 0;
+    background-color: $primary-color-dark;
+    left: 25%;
+    right: 25%;
   }
 }
 
@@ -55,18 +58,28 @@
 
 .c_mainImg {
   display: none;
-  width: 0;
-  transition: all ease 0.3s;
+  width: 100%;
+  transition: all ease 0.5s;
+  border-bottom: 2px solid $primary-color;
 
   .container:hover > & {
     display: block;
     height: 70%;
   }
 
-  > img {
+  .mainImg {
     width: 100%;
     height: 100%;
+
     cursor: pointer;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    transition: all ease 0.5s;
+    opacity: 0;
+
+    .container:hover > & {
+      opacity: 1;
+    }
   }
 
   :nth-child(2n) {
@@ -75,6 +88,13 @@
     right: 10px;
     width: 40px;
     height: 40px;
+
+    transition: all ease 0.5s;
+    opacity: 0;
+
+    .container:hover > & {
+      opacity: 1;
+    }
   }
 }
 
@@ -92,13 +112,17 @@
 .c_icons {
   display: none;
   height: 30%;
-  
+  font-size: 2rem;
+
   .container:hover > & {
     @apply flex justify-center items-center gap-2;
   }
-  
+
+  a {
+    display: flex;
+  }
+
   svg {
-    padding: 5px;
     cursor: pointer;
   }
 }
