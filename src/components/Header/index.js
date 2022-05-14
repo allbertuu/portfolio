@@ -52,7 +52,7 @@ function Header() {
   return (
     <header>
       <div className={`${styles.c_logo} absolute md:relative`}>
-        <img src={imgLogo} alt="Logo" />
+        <img src={imgLogo} alt="Logo vermelha" />
         <span>Portfólio</span>
       </div>
 

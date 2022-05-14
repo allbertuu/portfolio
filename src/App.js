@@ -52,12 +52,12 @@ function App() {
             </div>
             <Button text="Quero conhecê-lo!" to='s_aboutMe' />
           </div>
-          <img src={profileImg} alt="" />
+          <img src={profileImg} alt="Criador do site dentro de um design baseado na sua logotipo" />
         </section>
 
         <section id='s_aboutMe'>
           <div className="box delaySmallReveal intervalCardReveal">
-            <img src={imgLogoTransparent} alt="White logo" />
+            <img src={imgLogoTransparent} alt="Logo branca" />
           </div>
           <div className="c_aboutMe intervalCardReveal">
             <h1 className="delaySmallReveal section_title">
@@ -89,7 +89,7 @@ function App() {
           <p>Made by <a href="https://www.linkedin.com/in/albertov-albuquerque">Alberto Vinícius A. dos Santos</a></p>
           <div>
             <p>Powered by</p>
-            <img src={imgLogo} alt="White logo" />
+            <img src={imgLogo} alt="Logo branca" />
           </div>
         </div>
       </footer>

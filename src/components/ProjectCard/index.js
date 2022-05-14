@@ -8,12 +8,12 @@ function ProjectCard({ title, img, url, socials }) {
       <span className={styles.blob} />
 
       <div className={styles.c_logo}>
-        <img src={logoImg} alt="logo" />
+        <img src={logoImg} alt="Logo vermelha" />
       </div>
 
       <a className={styles.c_mainImg} href={url}>
         <img src={img} id="mainImg" className={styles.mainImg} alt='Visão geral do projeto' />
-        <img src={logoImg} alt="logo" />
+        <img src={logoImg} alt="Logo vermelha" />
       </a>
 
       <h3 className={styles.title}>{title}</h3>
