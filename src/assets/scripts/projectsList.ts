@@ -1,7 +1,18 @@
 import sneakersImg from '../imgs/sneakers.jpg';
 import netflixImg from '../imgs/netflix.jpg';
 
-let projectsList = [
+type Socials = {
+  github: string,
+}
+
+type ProjectList = {
+  name: string,
+  overviewImg: string,
+  liveSite: string,
+  socials: Socials
+}[]
+
+let projectsList:ProjectList = [
   {
     name: 'Sneakers',
     overviewImg: sneakersImg,
@@ -20,7 +31,7 @@ let projectsList = [
   },
   {
     name: 'Letmeask',
-    overviewImg: 0,
+    overviewImg: '',
     liveSite: '',
     socials: {
       github: '',

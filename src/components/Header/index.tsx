@@ -33,7 +33,7 @@ function Header() {
     }
   ]
 
-  function scrollToSection(id) {
+  function scrollToSection(id: string) {
     scrollTo(id);
   }
 
