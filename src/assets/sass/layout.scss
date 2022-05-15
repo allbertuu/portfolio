@@ -1,11 +1,13 @@
-#s_welcome,
-#s_aboutMe,
-#s_projects,
+#s-welcome,
+#s-aboutMe,
+#s-projects,
+#s-skills,
+#s-contact-me,
 footer {
   @apply px-9 md:px-16 lg:px-20;
 }
 
-#s_welcome {
+#s-welcome {
   align-content: center;
   justify-items: center;
   position: relative;
@@ -14,12 +16,19 @@ footer {
   height: 100vh;
 }
 
-#s_aboutMe {
-  @apply grid grid-cols-1 md:grid-cols-2 items-center justify-items-center;
-  height: 95vh;
+#s-aboutMe {
+  @apply grid grid-cols-1 md:grid-cols-2 items-center justify-items-center
+  pt-20 pb-32;
 }
 
-#s_projects {
+#s-projects {
   @apply pt-20 pb-32;
-  // height: 90vh;
+}
+
+#s-skills {
+  @apply pt-20 pb-32;
+}
+
+#s-contact-me {
+  @apply pt-20 pb-32;
 }

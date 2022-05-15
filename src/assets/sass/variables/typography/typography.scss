@@ -1,7 +1,7 @@
 /*
 ** Headings
 */
-#s_welcome {
+#s-welcome {
   h1 {
     font-size: 2rem;
     line-height: 1;
@@ -32,7 +32,7 @@ h3 {
 }
 
 p {
-  @apply text-base lg:text-lg xl:text-xl;
+  @apply lg:text-lg xl:text-xl;
 }
 
 button {

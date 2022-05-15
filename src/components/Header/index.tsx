@@ -13,23 +13,29 @@ import AutoAwesomeMotionIcon from '@mui/icons-material/AutoAwesomeMotion';
 
 function Header() {
 
+  type SectionList = {
+    name: string,
+    id: string,
+    icon: JSX.Element
+  }[];
+
   const [isNavVisibility, setNavVisibility] = useState(false);
 
-  const sectionList = [
+  const sectionList: SectionList = [
     {
       name: 'Início',
-      id: 's_welcome',
-      icon: <HomeIcon/>
+      id: 's-welcome',
+      icon: <HomeIcon />
     },
     {
       name: 'Projetos',
-      id: 's_projects',
-      icon: <AutoAwesomeMotionIcon/>
+      id: 's-projects',
+      icon: <AutoAwesomeMotionIcon />
     },
     {
       name: 'Habilidades',
-      id: 's_skills',
-      icon: <OfflineBoltIcon/>
+      id: 's-skills',
+      icon: <OfflineBoltIcon />
     }
   ]
 

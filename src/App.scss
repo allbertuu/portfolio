@@ -39,7 +39,7 @@ body {
 }
 
 // Welcome
-#s_welcome {
+#s-welcome {
   background: $secondary-bg;
 
   :first-child {
@@ -71,7 +71,7 @@ body {
 }
 
 // About me
-#s_aboutMe {
+#s-aboutMe {
   background: $secondary-bg;
   box-shadow: inset 5px 5px 20px 3px $shadow-dark;
 
@@ -111,6 +111,7 @@ body {
         margin-top: 0.5rem;
       }
     }
+
     p {
       max-width: 650px;
       text-align: justify;
@@ -120,18 +121,59 @@ body {
 }
 
 // Projects
-#s_projects {
+#s-projects {
   background: $primary-bg;
   @apply flex flex-col gap-16;
 
   h1 {
     color: white;
-    text-align: center;
+    margin: 0 auto;
+    z-index: 2;
+    width: fit-content;
+
+    &::after {
+      content: "";
+      background-color: $secondary-color;
+      position: absolute;
+      display: block;
+      width: 50px;
+      height: 0.3rem;
+      margin-top: -0.5rem;
+      z-index: -1;
+    }
   }
 
   .c_projects_cards {
     @apply flex flex-col lg:flex-row flex-wrap items-center justify-evenly
     gap-10;
+  }
+}
+
+// Contact me
+#s-contact-me {
+}
+
+// Skills
+#s-skills {
+  background: $secondary-bg;
+  @apply flex flex-col gap-16;
+
+  h1 {
+    color: white;
+    margin: 0 auto;
+    z-index: 2;
+    width: fit-content;
+
+    &::after {
+      content: "";
+      background-color: $primary-color;
+      position: absolute;
+      display: block;
+      width: 50px;
+      height: 0.3rem;
+      margin-top: -0.5rem;
+      z-index: -1;
+    }
   }
 }
 
@@ -142,6 +184,7 @@ footer {
 
   > div {
     @apply flex flex-col items-center gap-1 sm:flex-row sm:justify-around;
+    
     div {
       @apply flex items-center gap-2;
 

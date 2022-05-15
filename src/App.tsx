@@ -42,24 +42,24 @@ function App() {
       <Header />
 
       <main>
-        <section id='s_welcome'>
+        <section id='s-welcome'>
           <div>
             <div>
               <h3 className="item_1">Olá, me chamo</h3>
               <h1 className="item_2">Alberto Albuquerque</h1>
               <h2 className="item_3">Desenvolvedor Front-end</h2>
             </div>
-            <Button text="Quero conhecê-lo!" to='s_aboutMe' />
+            <Button text="Quero conhecê-lo!" to='s-aboutMe' />
           </div>
           <img src={profileImg} alt="Criador do site dentro de um design baseado na sua logotipo" />
         </section>
 
-        <section id='s_aboutMe'>
+        <section id='s-aboutMe'>
           <div className="box delaySmallReveal intervalCardReveal">
             <img src={imgLogoTransparent} alt="Logo branca" />
           </div>
           <div className="c_aboutMe intervalCardReveal">
-            <h1 className="delaySmallReveal section_title">
+            <h1 className="delaySmallReveal">
               Sobre mim
             </h1>
             <p className="delayMediumReveal">
@@ -73,12 +73,19 @@ function App() {
           </div>
         </section>
 
-        <section id="s_projects">
-          <h1 className='section_title'>Projetos</h1>
+        <section id="s-projects">
+          <h1>Projetos</h1>
           <div className='c_projects_cards delaySmallReveal'>
             {projectsList.map((project, index) => (
               <ProjectCard title={project.name} imgSrc={project.overviewImg} url={project.liveSite} socials={project.socials} key={index} />
             ))}
+          </div>
+        </section>
+
+        <section id="s-skills">
+          <h1>Habilidades</h1>
+          <div className='c_projects_cards delaySmallReveal'>
+
           </div>
         </section>
       </main>
