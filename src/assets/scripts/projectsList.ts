@@ -3,14 +3,14 @@ import netflixImg from '../imgs/netflix.jpg';
 
 interface Socials {
   github: string,
-}
+};
 
 type ProjectList = {
   name: string,
   overviewImg: string,
   liveSite: string,
   socials: Socials
-}[]
+}[];
 
 let projectsList: ProjectList = [
   {
@@ -37,6 +37,6 @@ let projectsList: ProjectList = [
       github: '',
     },
   }
-]
+];
 
 export default projectsList
