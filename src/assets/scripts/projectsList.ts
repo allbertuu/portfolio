@@ -1,7 +1,7 @@
 import sneakersImg from '../imgs/sneakers.jpg';
 import netflixImg from '../imgs/netflix.jpg';
 
-type Socials = {
+interface Socials {
   github: string,
 }
 
@@ -12,7 +12,7 @@ type ProjectList = {
   socials: Socials
 }[]
 
-let projectsList:ProjectList = [
+let projectsList: ProjectList = [
   {
     name: 'Sneakers',
     overviewImg: sneakersImg,
