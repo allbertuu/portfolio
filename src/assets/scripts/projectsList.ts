@@ -31,11 +31,11 @@ let projectsList: ProjectList = [
     },
   },
   {
-    name: 'Letmeask',
-    overviewImg: '',
-    liveSite: '',
+    name: 'Desafio Leaflet',
+    overviewImg: leafletImg,
+    liveSite: 'https://desafio-leaflet.vercel.app/',
     socials: {
-      github: '',
+      github: 'https://github.com/allbertuu/desafio-leaflet',
     },
   }
 ];
