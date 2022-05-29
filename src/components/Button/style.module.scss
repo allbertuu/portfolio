@@ -1,20 +1,7 @@
 // Colors
 @import "../../assets/sass/variables/colors/colors.scss";
-
-@keyframes animate {
-  to {
-    width: 100%;
-  }
-}
-
-@keyframes show {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
+// Keyframes
+@import "../../assets/sass/variables/common/common.scss";
 
 .btn {
   background-color: transparent;
@@ -56,7 +43,7 @@
     left: 50%;
     transform: translate(-50%, -50%) rotate(20deg);
     background: $primary-color;
-    transition: .5s ease;
+    transition: 0.5s ease;
     display: block;
     z-index: -1;
   }
@@ -76,7 +63,7 @@
     height: 2px;
     width: 2rem;
     background-color: $primary-color;
-    transition: .5s ease;
+    transition: 0.5s ease;
     animation: animate ease forwards 3s 6.1s;
   }
 }
@@ -101,11 +88,11 @@
       opacity: 0;
       z-index: -1;
     }
-  
+
     &:hover {
       color: white;
       @apply shadow-xl;
-  
+
       &::before {
         transform: translateX(0);
         opacity: 1;
@@ -115,7 +102,7 @@
 
   &_icon {
     border-bottom: 1px solid $primary-color;
-  
+
     &::before {
       content: "";
       position: absolute;
@@ -127,12 +114,12 @@
       transition: all 0.3s;
       z-index: -1;
     }
-  
+
     &:hover {
       color: $primary-color;
       border-bottom: 1px solid transparent;
       @apply shadow-2xl font-medium;
-  
+
       &::before {
         transform: translateY(0);
         background-color: white;

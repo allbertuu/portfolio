@@ -1,6 +1,6 @@
-/*
-** Headings
-*/
+/*************
+** Headings **
+*************/
 #s-welcome {
   h1 {
     font-size: 2rem;
@@ -30,7 +30,9 @@ h2 {
 h3 {
   @apply text-xl sm:text-2xl;
 }
-
+/*************
+** Others **
+*************/
 p {
   @apply lg:text-lg xl:text-xl;
 }
