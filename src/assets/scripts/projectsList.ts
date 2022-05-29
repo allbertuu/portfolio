@@ -1,5 +1,6 @@
-import sneakersImg from '../imgs/sneakers.jpg';
-import netflixImg from '../imgs/netflix.jpg';
+import sneakersImg from '../imgs/projects/sneakers.jpg';
+import netflixImg from '../imgs/projects/netflix.jpg';
+import leafletImg from '../imgs/projects/leaflet.png';
 
 interface Socials {
   github: string,
