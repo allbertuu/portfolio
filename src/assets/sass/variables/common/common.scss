@@ -1,7 +1,7 @@
 /************
 ** Keyframes
 ************/
-@keyframes scaleUpSmall{
+@keyframes scaleUpSmall {
   from {
     transform: scale(1.1);
   }
@@ -20,9 +20,6 @@
 }
 
 @keyframes show {
-  from {
-    opacity: 0;
-  }
   to {
     opacity: 1;
   }
@@ -41,4 +38,8 @@ $timing-function: cubic-bezier(0.86, 0.03, 0.09, 0.95);
 
 @mixin animationText($delay, $name) {
   animation: 2s $timing-function $delay 2 both alternate-reverse $name;
+}
+
+@mixin animation($name, $duration, $timing-function, $delay, $fill-mode) {
+  animation: $name $duration $timing-function $delay $fill-mode;
 }
