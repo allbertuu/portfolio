@@ -16,13 +16,13 @@ export function initScrollReveal() {
   sr.reveal(".intervalCardReveal", { interval: 700 });
 }
 
-export function scrollTo(id: string) {
-  if (id === 'Without prop') {
+export function scrollTo(id?: string) {
+  if (!id) {
     return;
   }
 
   let el = document.getElementById(id);
-  if (el !== null) {
+  if (el) {
     el.scrollIntoView({
       behavior: 'smooth',
     })

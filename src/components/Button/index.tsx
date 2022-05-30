@@ -7,7 +7,7 @@ type ButtonProps = {
   to?: string,
 }
 
-function Button({ text, type = 'primary', to = 'Without prop' }: ButtonProps) {
+function Button({ text, type = 'primary', to }: ButtonProps) {
   return (
     <button className={`c-btn c-btn-faixa c-btn-faixa--${type}`} onClick={() => scrollTo(to)}>
       {text}
