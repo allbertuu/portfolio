@@ -1,38 +1,26 @@
-// Colors
-@import "../../assets/sass/variables/colors/colors.scss";
-// Keyframes
-@import "../../assets/sass/variables/common/common.scss";
-
-.btn {
-  background-color: transparent;
+.c-btn {
   position: relative;
   overflow: hidden;
   border-radius: 0.3rem;
+  padding: 0.6rem 1rem;
 
+  font-size: inherit;
   text-decoration: none;
-  @apply text-lg sm:text-xl lg:text-lg xl:text-xl;
+  color: white;
+  text-align: center;
 
   cursor: pointer;
 }
 
-.faixa {
-  @extend .btn;
-  padding: 0.8em 1.2em;
-
-  text-align: center;
+.c-btn-faixa {
   text-transform: uppercase;
-  color: white;
 
-  transition: 0.3s;
+  transition: 0.3s ease;
   z-index: 1;
-  opacity: 0;
   @apply shadow-lg;
 
-  animation: show 1.5s forwards 6s;
-
-  &:hover {
-    color: white;
-    @apply shadow-2xl;
+  &:hover::before {
+    width: 110%;
   }
 
   &::before {
@@ -43,14 +31,9 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) rotate(20deg);
-    background: $primary-color;
     transition: 0.5s ease;
     display: block;
     z-index: -1;
-  }
-
-  &:hover::before {
-    width: 105%;
   }
 
   &:after {
@@ -63,19 +46,43 @@
     left: 0;
     height: 2px;
     width: 2rem;
-    background-color: $primary-color;
     transition: 0.5s ease;
-    animation: animate ease forwards 3s 6.1s;
+    @include animation(animate, 4s, ease, 6.1s, forwards);
+  }
+
+  &--primary {
+    &::before {
+      background: $primary-color;
+    }
+  
+    &:active::before, &:active::after {
+      background: $primary-color-dark;
+    }
+  
+    &:after {
+      background-color: $primary-color;
+    }
+  }
+
+  &--secondary {
+    &::before {
+      background: $secondary-color;
+    }
+  
+    &:active::before, &:active::after {
+      background: $secondary-color-dark;
+    }
+  
+    &:after {
+      background-color: $secondary-color;
+    }
   }
 }
 
-.li {
-  @extend .btn;
+.c-btn-li {
   padding: 0.4rem 0.8rem;
 
-  color: white;
-
-  &_full {
+  &--full {
     &::before {
       content: "";
       position: absolute;
@@ -91,7 +98,6 @@
     }
 
     &:hover {
-      color: white;
       @apply shadow-xl;
 
       &::before {
@@ -101,7 +107,7 @@
     }
   }
 
-  &_icon {
+  &--icon {
     border-bottom: 1px solid $primary-color;
 
     &::before {

@@ -1,9 +1,8 @@
 import { useEffect, useState } from 'react';
 // scripts
-import { scrollTo } from '../../assets/scripts/scrollTo';
+import { scrollTo } from '../../assets/scripts/main';
 // styles
 import styles from './style.module.scss';
-import button from '../Button/style.module.scss';
 // imgs and icons
 import imgLogo from '../../assets/imgs/logo.png';
 import HomeIcon from '@mui/icons-material/Home';
@@ -62,7 +61,7 @@ function Header() {
         <div className={isNavVisibility ? styles.c_menu : undefined}>
           <ul className={isNavVisibility ? "flex flex-col items-center justify-center list-none gap-6" : "hidden md:flex md:flex-row list-none gap-4"}>
             {sectionList.map((section, index) => (
-              <li key={index} onClick={() => scrollTo(section.id)} className={isNavVisibility ? `${button.li} ${button.li_icon}` : `${button.li} ${button.li_full}`}>
+              <li key={index} onClick={() => scrollTo(section.id)} className={isNavVisibility ? "c-btn c-btn-li c-btn-li--icon" : "c-btn c-btn-li c-btn-li--full"}>
                 {isNavVisibility ? section.icon : section.name}
               </li>
             ))}

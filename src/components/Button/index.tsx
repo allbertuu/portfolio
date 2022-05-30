@@ -1,16 +1,15 @@
 // scripts
-import { scrollTo } from '../../assets/scripts/scrollTo';
-// styles
-import styles from './style.module.scss';
+import { scrollTo } from '../../assets/scripts/main';
 
 type ButtonProps = {
   text: string,
-  to: string
+  type?: string,
+  to?: string,
 }
 
-function Button({ text, to }:ButtonProps) {
+function Button({ text, type = 'primary', to = 'Without prop' }: ButtonProps) {
   return (
-    <button className={styles.faixa} onClick={() => scrollTo(to)}>
+    <button className={`c-btn c-btn-faixa c-btn-faixa--${type}`} onClick={() => scrollTo(to)}>
       {text}
     </button>
   );
