@@ -1,16 +1,17 @@
 import { useEffect } from 'react';
 // scripts
-import sr, { initScrollReveal } from './assets/scripts/ScrollReveal';
+import sr, { initScrollReveal } from './assets/scripts/main';
 import projectsList from './assets/scripts/projectsList';
 // components
 import Header from './components/Header';
 import Button from './components/Button';
 import ProjectCard from './components/ProjectCard';
+import ContactForm from './components/ContactForm';
 // imgs and icons
 import imgLogoTransparent from './assets/imgs/logo-transparent.png';
 import imgLogo from './assets/imgs/logo.png';
 import profileImg from './assets/imgs/developer.png';
-// styles
+// general styles
 import './App.scss';
 
 function App() {
@@ -84,8 +85,16 @@ function App() {
 
         <section id="s-skills">
           <h1>Habilidades</h1>
-          <div className='c_projects_cards delaySmallReveal'>
+          <div className=''>
 
+          </div>
+        </section>
+
+        <section id="s-contact-me">
+          <h1>Contato</h1>
+
+          <div>
+            <ContactForm />
           </div>
         </section>
       </main>
