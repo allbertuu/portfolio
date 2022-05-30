@@ -23,19 +23,19 @@ let projectsList: ProjectList = [
     },
   },
   {
-    name: 'Netflix Clone',
-    overviewImg: netflixImg,
-    liveSite: 'https://netflixclone-allbertuu.vercel.app/',
-    socials: {
-      github: 'https://github.com/allbertuu/netflixclone',
-    },
-  },
-  {
     name: 'Desafio Leaflet',
     overviewImg: leafletImg,
     liveSite: 'https://desafio-leaflet.vercel.app/',
     socials: {
       github: 'https://github.com/allbertuu/desafio-leaflet',
+    },
+  },
+  {
+    name: 'Netflix Clone',
+    overviewImg: netflixImg,
+    liveSite: 'https://netflixclone-allbertuu.vercel.app/',
+    socials: {
+      github: 'https://github.com/allbertuu/netflixclone',
     },
   }
 ];
