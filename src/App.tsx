@@ -77,8 +77,8 @@ function App() {
         <section id="s-projects">
           <h1>Projetos</h1>
           <div className='c_projects_cards delaySmallReveal'>
-            {projectsList.map((project, index) => (
-              <ProjectCard title={project.name} imgSrc={project.overviewImg} url={project.liveSite} socials={project.socials} key={index} />
+            {projectsList.map((project) => (
+              <ProjectCard key={project.name} title={project.name} imgSrc={project.overviewImg} url={project.liveSite} socials={project.socials} />
             ))}
           </div>
         </section>

@@ -60,8 +60,8 @@ function Header() {
       <nav className={isNavVisibility ? "block" : "invisible md:block md:visible"}>
         <div className={isNavVisibility ? styles.c_menu : undefined}>
           <ul className={isNavVisibility ? "flex flex-col items-center justify-center list-none gap-6" : "hidden md:flex md:flex-row list-none gap-4"}>
-            {sectionList.map((section, index) => (
-              <li key={index} onClick={() => scrollTo(section.id)} className={isNavVisibility ? "c-btn c-btn-li c-btn-li--icon" : "c-btn c-btn-li c-btn-li--full"}>
+            {sectionList.map((section) => (
+              <li key={section.name} onClick={() => scrollTo(section.id)} className={isNavVisibility ? "c-btn c-btn-li c-btn-li--icon" : "c-btn c-btn-li c-btn-li--full"}>
                 {isNavVisibility ? section.icon : section.name}
               </li>
             ))}
