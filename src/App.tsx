@@ -20,21 +20,22 @@ function App() {
     initScrollReveal();
 
     const item_1 = {
-      origin: 'top',
       delay: 200,
     }
     const item_2 = {
-      origin: 'top',
       delay: 2200,
     }
     const item_3 = {
-      origin: 'top',
       delay: 4000,
+    }
+    const profileImg = {
+      delay: 500,
     }
 
     sr.reveal('.item_1', item_1);
     sr.reveal('.item_2', item_2);
     sr.reveal('.item_3', item_3);
+    sr.reveal('#profileImg', profileImg);
 
   }, [])
 
@@ -52,7 +53,7 @@ function App() {
             </div>
             <Button text="Quero conhecê-lo!" to='s-aboutMe' />
           </div>
-          <img src={profileImg} alt="Criador do site dentro de um design baseado na sua logotipo" />
+          <img id="profileImg" src={profileImg} alt="Criador do site dentro de um design baseado na sua logotipo" />
         </section>
 
         <section id='s-aboutMe'>
