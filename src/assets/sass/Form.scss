@@ -1,0 +1,11 @@
+input, textarea {
+  background-color: $secondary-color-dark;
+  width: 100%;
+  @apply px-3 py-3 
+  rounded outline-none;
+
+  &:focus {
+    @apply shadow-xl transition-all duration-500
+    bg-white;
+  }
+}
