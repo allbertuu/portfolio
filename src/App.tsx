@@ -86,16 +86,13 @@ function App() {
         <section id="s-skills">
           <h1>Habilidades</h1>
           <div className='text-center text-xl uppercase -mt-4'>
-              Em breve...
+            Em breve...
           </div>
         </section>
 
         <section id="s-contact-me">
           <h1>Contato</h1>
-
-          <div>
-            <ContactForm />
-          </div>
+          <ContactForm />
         </section>
       </main>
 
