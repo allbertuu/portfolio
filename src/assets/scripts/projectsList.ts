@@ -1,6 +1,7 @@
 import sneakersImg from '../imgs/projects/sneakers.jpg';
 import netflixImg from '../imgs/projects/netflix.jpg';
 import leafletImg from '../imgs/projects/leaflet.png';
+import portfolioImg from '../imgs/projects/portfolio.jpg';
 
 interface Socials {
   github: string,
@@ -36,6 +37,14 @@ let projectsList: ProjectList = [
     liveSite: 'https://netflixclone-allbertuu.vercel.app/',
     socials: {
       github: 'https://github.com/allbertuu/netflixclone',
+    },
+  },
+  {
+    name: 'My portfolio',
+    overviewImg: portfolioImg,
+    liveSite: 'https://portfolio-allbertuu.vercel.app/',
+    socials: {
+      github: 'https://github.com/allbertuu/portfolio',
     },
   }
 ];
