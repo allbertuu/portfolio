@@ -14,6 +14,7 @@
 @import "./assets/sass/layout.scss";
 // Components
 @import "./assets/sass/Button.scss";
+@import "./assets/sass/Form.scss";
 
 body {
   font-family: "Titillium Web", sans-serif;
@@ -71,6 +72,7 @@ body {
 
   > img {
     @apply hidden lg:block;
+    filter: drop-shadow(0 5px 6rem $primary-color-darker);
     max-height: 550px;
   }
 }
@@ -193,10 +195,6 @@ body {
       margin-top: -0.5rem;
       z-index: -1;
     }
-  }
-
-  > div {
-    @apply px-4 w-full sm:mx-auto sm:max-w-md xl:max-w-lg;
   }
 }
 
