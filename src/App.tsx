@@ -85,8 +85,8 @@ function App() {
 
         <section id="s-skills">
           <h1>Habilidades</h1>
-          <div className=''>
-
+          <div className='text-center text-xl uppercase -mt-4'>
+              Em breve...
           </div>
         </section>
 
