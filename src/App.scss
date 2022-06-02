@@ -80,9 +80,6 @@ body {
   background: $secondary-bg;
   box-shadow: inset 5px 5px 20px 3px $shadow-dark;
 
-  @apply gap-12 md:gap-10 lg:gap-0
-  py-20 lg:py-32;
-
   .box {
     @apply w-64 lg:w-80
     h-64 lg:h-80
@@ -126,7 +123,6 @@ body {
 // Projects
 #s-projects {
   background: $primary-bg;
-  @apply flex flex-col gap-16;
 
   h1 {
     color: white;
@@ -156,7 +152,6 @@ body {
 #s-skills {
   background: $secondary-bg;
   box-shadow: inset 5px 5px 10px 3px $shadow;
-  @apply flex flex-col gap-16;
 
   h1 {
     color: white;
@@ -181,7 +176,6 @@ body {
 #s-contact-me {
   background: $primary-bg;
   box-shadow: inset 5px 5px 20px 3px $shadow-dark;
-  @apply flex flex-col gap-20;
 
   h1 {
     color: white;
@@ -209,7 +203,6 @@ body {
 // Footer
 footer {
   background-color: $secondary-color;
-  @apply py-10;
 
   > div {
     @apply flex flex-col items-center gap-1 sm:flex-row sm:justify-around;

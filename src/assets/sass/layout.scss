@@ -18,17 +18,25 @@ footer {
 
 #s-aboutMe {
   @apply grid grid-cols-1 md:grid-cols-2 items-center justify-items-center
-  pt-20 pb-32;
+  py-20 lg:py-32 pb-32
+  gap-12 md:gap-10 lg:gap-0;
 }
 
 #s-projects {
-  @apply pt-20 pb-32;
+  @apply flex flex-col gap-16
+  pt-20 pb-32;
 }
 
 #s-skills {
-  @apply pt-20 pb-32;
+  @apply flex flex-col gap-16
+  pt-20 pb-32;
 }
 
 #s-contact-me {
-  @apply pt-20 pb-32;
+  @apply flex flex-col gap-20
+  pt-20 pb-32;
+}
+
+footer {
+  @apply py-10;
 }
