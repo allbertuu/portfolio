@@ -5,7 +5,7 @@ input, textarea {
   rounded outline-none;
 
   &:focus {
-    @apply shadow-xl transition-all duration-500
+    @apply shadow-xl transition-all duration-300
     bg-white;
   }
 }
