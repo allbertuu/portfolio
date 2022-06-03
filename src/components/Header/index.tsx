@@ -1,8 +1,6 @@
 import { useEffect, useState } from 'react';
 // scripts
 import { scrollTo } from '../../assets/scripts/main';
-// styles
-import styles from './style.module.scss';
 // imgs and icons
 import imgLogo from '../../assets/imgs/logo.png';
 import HomeIcon from '@mui/icons-material/Home';
@@ -52,13 +50,13 @@ function Header() {
 
   return (
     <header>
-      <div className={`${styles.c_logo} absolute md:relative`}>
+      <div className="header__logo absolute md:relative">
         <img src={imgLogo} alt="Logo vermelha" />
         <span>Portfólio</span>
       </div>
 
       <nav className={isNavVisibility ? "block" : "invisible md:block md:visible"}>
-        <div className={isNavVisibility ? styles.c_menu : undefined}>
+        <div className={isNavVisibility ? "header__menu" : undefined}>
           <ul className={isNavVisibility ? "flex flex-col items-center justify-center list-none gap-6" : "hidden md:flex md:flex-row list-none gap-4"}>
             {sectionList.map((section) => (
               <li key={section.name} onClick={() => scrollTo(section.id)} className={isNavVisibility ? "c-btn c-btn-li c-btn-li--icon" : "c-btn c-btn-li c-btn-li--full"}>

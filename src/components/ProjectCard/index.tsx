@@ -1,5 +1,3 @@
-// styles
-import styles from './style.module.scss';
 // imgs and icons
 import logoImg from '../../assets/imgs/logo.png';
 import GitHubIcon from '@mui/icons-material/GitHub';
@@ -17,21 +15,21 @@ type ProjectCardProps = {
 
 function ProjectCard({ title, imgSrc, url, socials }:ProjectCardProps) {
   return (
-    <div className={`${styles.container} intervalCardReveal`}>
-      <span className={styles.blob} />
+    <div className="c-project-card intervalCardReveal">
+      <span className="c-project-card__blob" />
 
-      <div className={styles.c_logo}>
+      <div className="c-project-card__logo">
         <img src={logoImg} alt="Logo vermelha" />
       </div>
 
-      <a className={styles.c_mainImg} href={url}>
-        <img src={imgSrc} id="mainImg" className={styles.mainImg} alt='Visão geral do projeto' />
+      <a className="c-project-card__main-img" href={url}>
+        <img src={imgSrc} alt='Visão geral do projeto' />
         <img src={logoImg} alt="Logo vermelha" />
       </a>
 
-      <h3 className={styles.title}>{title}</h3>
+      <h3 className="c-project-card__title">{title}</h3>
 
-      <div className={styles.c_icons}>
+      <div className="c-project-card__icons">
         <a href={socials.github}>
           <GitHubIcon fontSize='inherit' />
         </a>

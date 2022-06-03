@@ -1,0 +1,125 @@
+.c-project-card {
+  background: #f0f0f0;
+  border-radius: 10px;
+  transition: all 0.5s;
+  position: relative;
+
+  min-width: 280px;
+  width: 280px;
+  height: 240px;
+
+  @apply shadow-lg;
+
+  &:hover {
+    background-color: $secondary-color;
+  }
+
+  &__blob {
+    height: 10px;
+    position: absolute;
+    top: 0;
+    left: 10%;
+    right: 10%;
+  
+    border-radius: 0 0 30px 30px;
+    background-color: $secondary-color;
+    transition: all 0.3s;
+  
+    .c-project-card:hover & {
+      background-color: $primary-color-dark;
+      left: 25%;
+      right: 25%;
+    }
+  }
+
+  &__logo {
+    width: 110px;
+    height: 100px;
+    margin: 45px auto 20px;
+  
+    background-color: $secondary-color;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    .c-project-card:hover & {
+      display: none;
+    }
+  
+    img {
+      width: 75px;
+    }
+  }
+
+  &__main-img {
+    display: none;
+    width: 100%;
+    transition: all ease 0.5s;
+    border-bottom: 2px solid $primary-color;
+  
+    .c-project-card:hover & {
+      display: block;
+      height: 70%;
+    }
+  
+    :first-child {
+      width: 100%;
+      height: 100%;
+  
+      cursor: pointer;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      transition: all ease 0.5s;
+      opacity: 0;
+  
+      .c-project-card:hover & {
+        opacity: 1;
+      }
+    }
+  
+    :last-child {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      width: 40px;
+      height: 40px;
+  
+      transition: all ease 0.5s;
+      opacity: 0;
+  
+      .c-project-card:hover & {
+        opacity: 1;
+      }
+    }
+  }
+
+  &__title {
+    text-align: center;
+    font-weight: 600;
+    color: $secondary-color;
+    @apply uppercase;
+  
+    .c-project-card:hover & {
+      display: none;
+    }
+  }
+
+  &__icons {
+    display: none;
+    height: 30%;
+    font-size: 2rem;
+  
+    .c-project-card:hover & {
+      @apply flex justify-center items-center gap-2;
+    }
+  
+    a {
+      display: flex;
+    }
+  
+    svg {
+      cursor: pointer;
+    }
+  }
+}
