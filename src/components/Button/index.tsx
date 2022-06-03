@@ -9,7 +9,7 @@ type ButtonProps = {
 
 function Button({ text, type = 'primary', to }: ButtonProps) {
   return (
-    <button className={`c-btn c-btn-faixa c-btn-faixa--${type}`} onClick={() => scrollTo(to)}>
+    <button className={`c-btn c-btn-faixa-welcome c-btn-faixa--${type}`} onClick={() => scrollTo(to)}>
       {text}
     </button>
   );

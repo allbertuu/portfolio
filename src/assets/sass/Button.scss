@@ -45,9 +45,8 @@
     right: 0;
     left: 0;
     height: 2px;
-    width: 2rem;
+    width: 100%;
     transition: 0.5s ease;
-    @include animation(animate, 4s, ease, 6.1s, forwards);
   }
 
   &--primary {
@@ -75,6 +74,24 @@
   
     &:after {
       background-color: $secondary-color;
+    }
+  }
+
+  &-welcome {
+    @extend .c-btn-faixa;
+    
+    &:after {
+      content: "";
+      display: block;
+      margin: 0 auto;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      height: 2px;
+      width: 2rem;
+      transition: 0.5s ease;
+      @include animation(animate, 4s, ease, 6.1s, forwards);
     }
   }
 }
