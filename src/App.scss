@@ -84,7 +84,7 @@ body {
   background: $secondary-bg;
   box-shadow: inset 5px 5px 20px 3px $shadow-dark;
 
-  .box {
+  > :first-child {
     @apply w-64 lg:w-80
     h-64 lg:h-80
     flex justify-center items-center;
@@ -97,7 +97,7 @@ body {
     }
   }
 
-  .c_aboutMe {
+  > :last-child {
     @apply md:justify-self-start;
 
     h1 {
@@ -128,7 +128,7 @@ body {
 #s-projects {
   background: $primary-bg;
 
-  h1 {
+  > h1 {
     color: white;
     margin: 0 auto;
     z-index: 2;
@@ -146,7 +146,7 @@ body {
     }
   }
 
-  .c_projects_cards {
+  > div {
     @apply flex flex-col lg:flex-row flex-wrap items-center justify-evenly
     gap-10;
   }
@@ -157,7 +157,7 @@ body {
   background: $secondary-bg;
   box-shadow: inset 5px 5px 10px 3px $shadow;
 
-  h1 {
+  > h1 {
     color: white;
     margin: 0 auto;
     z-index: 2;
@@ -181,7 +181,7 @@ body {
   background: $primary-bg;
   box-shadow: inset 5px 5px 20px 3px $shadow-dark;
 
-  h1 {
+  > h1 {
     color: white;
     margin: 0 auto;
     z-index: 2;

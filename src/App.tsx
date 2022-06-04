@@ -57,10 +57,10 @@ function App() {
         </section>
 
         <section id='s-aboutMe'>
-          <div className="box delaySmallReveal intervalCardReveal">
+          <div className="delaySmallReveal intervalCardReveal">
             <img src={imgLogoTransparent} alt="Logo branca" />
           </div>
-          <div className="c_aboutMe intervalCardReveal">
+          <div className="intervalCardReveal">
             <h1 className="delaySmallReveal">
               Sobre mim
             </h1>
@@ -77,7 +77,7 @@ function App() {
 
         <section id="s-projects">
           <h1 className='delaySmallReveal'>Projetos</h1>
-          <div className='c_projects_cards delayLargeReveal'>
+          <div className='delayLargeReveal'>
             {projectsList.map((project) => (
               <ProjectCard key={project.name} title={project.name} imgSrc={project.overviewImg} url={project.liveSite} socials={project.socials} />
             ))}
