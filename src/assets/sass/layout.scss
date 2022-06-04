@@ -1,5 +1,5 @@
 #s-welcome,
-#s-aboutMe,
+#s-about-me,
 #s-projects,
 #s-skills,
 #s-contact-me,
@@ -16,7 +16,7 @@ footer {
   height: 100vh;
 }
 
-#s-aboutMe {
+#s-about-me {
   @apply grid grid-cols-1 md:grid-cols-2 items-center justify-items-center
   py-20 lg:py-32 pb-32
   gap-12 md:gap-10 lg:gap-0;

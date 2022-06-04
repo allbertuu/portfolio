@@ -51,12 +51,12 @@ function App() {
               <h1 className="item_2">Alberto Albuquerque</h1>
               <h2 className="item_3">Desenvolvedor Front-end</h2>
             </div>
-            <Button text="Quero conhecê-lo!" to='s-aboutMe' />
+            <Button text="Quero conhecê-lo!" to='s-about-me' />
           </div>
           <img id="profileImg" src={profileImg} alt="Criador do site dentro de um design baseado na sua logotipo" />
         </section>
 
-        <section id='s-aboutMe'>
+        <section id='s-about-me'>
           <div className="delaySmallReveal intervalCardReveal">
             <img src={imgLogoTransparent} alt="Logo branca" />
           </div>
