@@ -4,7 +4,7 @@ import { scrollTo } from '../../assets/scripts/main';
 // imgs and icons
 import imgLogo from '../../assets/imgs/logo.png';
 import HomeIcon from '@mui/icons-material/Home';
-// import LocalPostOfficeIcon from '@mui/icons-material/LocalPostOffice';
+import LocalPostOfficeIcon from '@mui/icons-material/LocalPostOffice';
 import OfflineBoltIcon from '@mui/icons-material/OfflineBolt';
 import AutoAwesomeMotionIcon from '@mui/icons-material/AutoAwesomeMotion';
 
@@ -33,6 +33,11 @@ function Header() {
       name: 'Habilidades',
       id: 's-skills',
       icon: <OfflineBoltIcon />
+    },
+    {
+      name: 'Entre em contato',
+      id: 's-contact-me',
+      icon: <LocalPostOfficeIcon />
     }
   ]
 
