@@ -76,8 +76,8 @@ function App() {
         </section>
 
         <section id="s-projects">
-          <h1>Projetos</h1>
-          <div className='c_projects_cards delaySmallReveal'>
+          <h1 className='delaySmallReveal'>Projetos</h1>
+          <div className='c_projects_cards delayLargeReveal'>
             {projectsList.map((project) => (
               <ProjectCard key={project.name} title={project.name} imgSrc={project.overviewImg} url={project.liveSite} socials={project.socials} />
             ))}
@@ -85,14 +85,14 @@ function App() {
         </section>
 
         <section id="s-skills">
-          <h1>Habilidades</h1>
-          <div className='text-center text-xl uppercase -mt-4'>
+          <h1 className='delaySmallReveal'>Habilidades</h1>
+          <div className='text-center text-xl uppercase -mt-4 delayMediumReveal'>
             Em breve...
           </div>
         </section>
 
         <section id="s-contact-me">
-          <h1>Contato</h1>
+          <h1 className='delaySmallReveal'>Contato</h1>
           <ContactForm />
         </section>
       </main>

@@ -67,7 +67,7 @@ function ContactForm() {
 
   if (submitState === 'Submitted') {
     return (
-      <div className="text-center">
+      <div className="text-center delayMediumReveal">
         <CheckCircleIcon fontSize="large" className="-mt-10 mb-4" />
         <span className="text-2xl mb-2 block">Sua mensagem foi enviada com sucesso!</span>
         <span className="text-md block">Entrarei em contato em breve.</span>
@@ -91,10 +91,10 @@ function ContactForm() {
       method="POST"
       target="_blank"
       className="px-4 w-full sm:mx-auto sm:max-w-md xl:max-w-lg
-    grid grid-cols-5 gap-4"
+    grid grid-cols-5 gap-4 delayMediumReveal"
     >
       <div className="grid grid-cols-4 gap-4 col-span-5">
-        <div className="col-span-4 sm:col-span-2">
+        <div className="col-span-4 sm:col-span-2 intervalCardReveal">
           <input
             id="name"
             type="text"
@@ -105,7 +105,7 @@ function ContactForm() {
             required
           />
         </div>
-        <div className="col-span-4 sm:col-span-2">
+        <div className="col-span-4 sm:col-span-2 intervalCardReveal">
           <input
             id="email"
             type="email"
@@ -117,7 +117,7 @@ function ContactForm() {
           />
         </div>
       </div>
-      <div className="col-span-5">
+      <div className="col-span-5 intervalCardReveal">
         <textarea
           id="message"
           placeholder="Sua mensagem"
@@ -128,7 +128,7 @@ function ContactForm() {
         />
       </div>
       <button
-        className="col-end-6 col-span-2 c-btn c-btn-faixa c-btn-faixa--secondary"
+        className="col-end-6 col-span-2 c-btn c-btn-faixa c-btn-faixa--secondary intervalCardReveal"
         type="submit"
       >
         Enviar
