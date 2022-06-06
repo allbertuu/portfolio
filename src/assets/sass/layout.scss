@@ -6,37 +6,3 @@
 footer {
   @apply px-9 md:px-16 lg:px-20;
 }
-
-#s-welcome {
-  align-content: center;
-  justify-items: center;
-  position: relative;
-  @apply grid grid-cols-1 lg:grid-cols-2
-    gap-4;
-  height: 100vh;
-}
-
-#s-about-me {
-  @apply grid grid-cols-1 md:grid-cols-2 items-center justify-items-center
-  py-20 lg:py-32 pb-32
-  gap-12 md:gap-10 lg:gap-0;
-}
-
-#s-projects {
-  @apply flex flex-col gap-16
-  pt-20 pb-32;
-}
-
-#s-skills {
-  @apply flex flex-col gap-16
-  pt-20 pb-32;
-}
-
-#s-contact-me {
-  @apply flex flex-col gap-20
-  pt-20 pb-32;
-}
-
-footer {
-  @apply py-10;
-}
