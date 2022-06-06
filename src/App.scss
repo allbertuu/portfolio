@@ -13,10 +13,11 @@
 // Layout
 @import "./assets/sass/layout.scss";
 // Components
-@import "./assets/sass/Button.scss";
-@import "./assets/sass/Form.scss";
-@import "./assets/sass/Header.scss";
-@import "./assets/sass/ProjectCard.scss";
+@import "./assets/sass/components/Button.scss";
+@import "./assets/sass/components/Form.scss";
+@import "./assets/sass/components/Header.scss";
+@import "./assets/sass/components/ProjectCard.scss";
+@import "./assets/sass/components/SkillCard.scss";
 
 body {
   font-family: "Titillium Web", sans-serif;
@@ -46,10 +47,10 @@ body {
 #s-welcome {
   background: $secondary-bg;
 
-  :first-child {
+  > :first-child {
     @apply flex flex-col items-center justify-center gap-6;
 
-    > div {
+    div {
       @apply flex flex-col gap-1 items-center lg:items-start;
 
       h3 {
