@@ -59,7 +59,7 @@ function App() {
           <img id="profileImg" src={profileImg} alt="Criador do site dentro de um design baseado na sua logotipo" />
         </section>
 
-        <section id='s-about-me' className='grid md:grid-cols-2 items-center justify-items-center py-20 lg:py-32 pb-32 gap-12 md:gap-10 lg:gap-0'>
+        <section id='s-about-me' className='grid lg:grid-cols-2 items-center justify-items-center py-20 lg:py-32 pb-32 gap-12 xl:gap-0'>
           <div className="delaySmallReveal intervalCardReveal">
             <img src={imgLogoTransparent} alt="Logo branca" />
           </div>
