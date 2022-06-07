@@ -9,7 +9,8 @@ type SubmitState = 'Error found' | 'Not submitted' | 'Submitting' | 'Submitted';
 type FormData = {
   name: string,
   email: string,
-  message: string
+  message: string,
+  dateSent: string
 };
 
 function ContactForm() {
@@ -20,7 +21,7 @@ function ContactForm() {
   }
 
   const [submitState, setSubmitState] = useState<SubmitState>('Not submitted');
-  const [formData, setFormData] = useState<FormData>({ name: '', email: '', message: '' });
+  const [formData, setFormData] = useState<FormData>({ name: '', email: '', message: '', dateSent: '' });
 
   function handleOnChange(e: { target: { name: string; value: string; }; }) {
     setFormData({ ...formData, [e.target.name]: e.target.value.trim() });
@@ -45,6 +46,10 @@ function ContactForm() {
   async function addFormDataToDatabase() {
     const formDataID = generateID();
     const databaseRef = ref(database, `messages/${formDataID}`);
+
+    let today = new Date();
+    let todayFormatted = today.toLocaleString('pt-br');
+    formData.dateSent = todayFormatted;
 
     await set(databaseRef, formData)
       .then(() => {
