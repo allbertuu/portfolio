@@ -1,5 +1,6 @@
 import { initializeApp } from 'firebase/app';
-import { getDatabase } from 'firebase/database';
+import { getDatabase, push, ref, set } from 'firebase/database';
+import { convertWeekdayNumberToString } from '../assets/scripts/main';
 // import { getAnalytics } from 'firebase/analytics';
 
 const firebaseConfig = {
@@ -18,3 +19,21 @@ const database = getDatabase(app);
 // const analytics = getAnalytics(app);
 
 export { app, database }
+
+type FormData = {
+  name: string,
+  email: string,
+  message: string,
+  dateSent: string
+};
+
+export async function addFormDataToDatabase(formData: FormData) {
+  const messagesListRef = ref(database, 'messages');
+  const newMessageRef = push(messagesListRef);
+
+  let today = new Date();
+  let todayFormatted = `${convertWeekdayNumberToString(today.getDay())} - ${today.toLocaleString('pt-br')}`;
+  formData.dateSent = todayFormatted;
+
+  return await set(newMessageRef, formData);
+}

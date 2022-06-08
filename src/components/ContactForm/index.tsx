@@ -1,9 +1,7 @@
-import { ref, set, push } from "firebase/database";
-import { database } from "../../services/firebase";
 import { FormEvent, useState } from "react";
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 import ErrorIcon from '@mui/icons-material/Error';
-import { convertWeekdayNumberToString } from "../../assets/scripts/main";
+import { addFormDataToDatabase } from "../../services/firebase";
 
 type SubmitState = 'Error found' | 'Not submitted' | 'Submitting' | 'Submitted';
 
@@ -39,26 +37,15 @@ function ContactForm() {
     })
   }
 
-  async function addFormDataToDatabase() {
-    const messagesListRef = ref(database, `messages`);
-    const newMessageRef = push(messagesListRef);
-
-    let today = new Date();
-    let todayFormatted = `${convertWeekdayNumberToString(today.getDay())} - ${today.toLocaleString('pt-br')}`;
-    formData.dateSent = todayFormatted;
-
-    await set(newMessageRef, formData)
+  function handleSubmit(e: FormEvent) {
+    e.preventDefault();
+    addFormDataToDatabase(formData)
       .then(() => {
         setSubmitState('Submitted');
       })
       .catch(() => {
         setSubmitState('Error found');
       });
-  }
-
-  function handleSubmit(e: FormEvent) {
-    e.preventDefault();
-    addFormDataToDatabase();
   }
 
   function handleError() {
