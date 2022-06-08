@@ -1,8 +1,9 @@
 import { ref, set, push } from "firebase/database";
-import { FormEvent, useState } from "react";
 import { database } from "../../services/firebase";
+import { FormEvent, useState } from "react";
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 import ErrorIcon from '@mui/icons-material/Error';
+import { convertWeekdayNumberToString } from "../../assets/scripts/main";
 
 type SubmitState = 'Error found' | 'Not submitted' | 'Submitting' | 'Submitted';
 
@@ -38,33 +39,12 @@ function ContactForm() {
     })
   }
 
-  function convertNumberOfWeekToWeekday(numberWeekday: number) {
-    switch (numberWeekday) {
-      case 0:
-        return 'Domingo';
-      case 1:
-        return 'Segunda';
-      case 2:
-        return 'Terça';
-      case 3:
-        return 'Quarta';
-      case 4:
-        return 'Quinta';
-      case 5:
-        return 'Sexta';
-      case 6:
-        return 'Sábado';
-      default:
-        break;
-    }
-  }
-
   async function addFormDataToDatabase() {
     const messagesListRef = ref(database, `messages`);
     const newMessageRef = push(messagesListRef);
 
     let today = new Date();
-    let todayFormatted = `${convertNumberOfWeekToWeekday(today.getDay())} - ${today.toLocaleString('pt-br')}`;
+    let todayFormatted = `${convertWeekdayNumberToString(today.getDay())} - ${today.toLocaleString('pt-br')}`;
     formData.dateSent = todayFormatted;
 
     await set(newMessageRef, formData)

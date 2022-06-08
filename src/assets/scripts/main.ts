@@ -8,7 +8,7 @@ export function initScrollReveal() {
     distance: "60px",
     duration: 2000,
   });
-  
+
   sr.reveal(".delaySmallReveal", { delay: 200 });
   sr.reveal(".delayMediumReveal", { delay: 400 });
   sr.reveal(".delayLargeReveal", { delay: 600 });
@@ -29,5 +29,26 @@ export function scrollTo(id?: string) {
   }
   else {
     console.error('Seção não existe.');
+  }
+}
+
+export function convertWeekdayNumberToString(numberWeekday: number) {
+  switch (numberWeekday) {
+    case 0:
+      return 'Domingo';
+    case 1:
+      return 'Segunda';
+    case 2:
+      return 'Terça';
+    case 3:
+      return 'Quarta';
+    case 4:
+      return 'Quinta';
+    case 5:
+      return 'Sexta';
+    case 6:
+      return 'Sábado';
+    default:
+      break;
   }
 }
