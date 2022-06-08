@@ -1,9 +1,10 @@
 .c-skill-card {
   border: 3px solid $primary-color;
-  max-width: 250px;
+  max-width: 260px;
   @apply items-center
   rounded-lg sm:max-w-sm
-  cursor-pointer;
+  cursor-pointer
+  text-center sm:text-justify;
 
   svg {
     @apply w-12 h-12;
