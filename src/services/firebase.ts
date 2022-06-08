@@ -13,12 +13,10 @@ const firebaseConfig = {
   appId: process.env.REACT_APP_APP_ID
 };
 
-const app = initializeApp(firebaseConfig);
+export const app = initializeApp(firebaseConfig);
 
-const database = getDatabase(app);
+export const database = getDatabase(app);
 // const analytics = getAnalytics(app);
-
-export { app, database }
 
 type FormData = {
   name: string,
