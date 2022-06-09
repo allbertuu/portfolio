@@ -36,7 +36,7 @@ export default function SkillCard({ name, description, yearsExperience, iconPath
   }
 
   return (
-    <div id={`c-skill-card-${name}`} className="intervalCardReveal c-skill-card flex flex-col sm:flex-row p-5 gap-4" onMouseOver={toggleCardColor} onMouseOut={toggleCardColor}>
+    <div id={`c-skill-card-${name}`} className="intervalCardRevealSmall c-skill-card flex flex-col sm:flex-row p-5 gap-4" onMouseOver={toggleCardColor} onMouseOut={toggleCardColor}>
       <div className="flex justify-center items-center sm:w-16">
         <SkillCardIcon id={name} path={iconPath} viewBox={iconViewBox}/>
       </div>
