@@ -13,7 +13,8 @@ export function initScrollReveal() {
   sr.reveal(".delayMediumReveal", { delay: 400 });
   sr.reveal(".delayLargeReveal", { delay: 600 });
   sr.reveal(".delayExtraBigReveal", { delay: 800 });
-  sr.reveal(".intervalCardReveal", { interval: 700 });
+  sr.reveal(".intervalCardReveal", { interval: 500 });
+  sr.reveal(".intervalCardRevealSmall", { interval: 300 });
 }
 
 export function scrollTo(id?: string) {
