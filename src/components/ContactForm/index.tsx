@@ -26,9 +26,7 @@ function ContactForm() {
     let email = (document.getElementById('email') as HTMLInputElement);
     let message = (document.getElementById('message') as HTMLInputElement);
 
-    const fields = [];
-
-    fields.push(name, email, message);
+    const fields = [name, email, message];
 
     fields.forEach((field) => {
       if (field) {
