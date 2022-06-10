@@ -1,29 +1,20 @@
 import { FormEvent, useState } from "react";
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 import ErrorIcon from '@mui/icons-material/Error';
-import { addFormDataToDatabase } from "../../services/firebase";
+
+import emailjs from '@emailjs/browser';
 
 type SubmitState = 'Error found' | 'Not submitted' | 'Submitting' | 'Submitted';
 
-type FormData = {
-  name: string,
-  email: string,
-  message: string,
-  dateSent: string
-};
-
 function ContactForm() {
 
-  const [submitState, setSubmitState] = useState<SubmitState>('Not submitted');
-  const [formData, setFormData] = useState<FormData>({ name: '', email: '', message: '', dateSent: '' });
+  emailjs.init('rqA0490qfu66Z9Qjn');
 
-  function handleOnChange(e: { target: { name: string; value: string; }; }) {
-    setFormData({ ...formData, [e.target.name]: e.target.value.trim() });
-  }
+  const [submitState, setSubmitState] = useState<SubmitState>('Not submitted');
 
   function resetInputs() {
-    let name = (document.getElementById('name') as HTMLInputElement);
-    let email = (document.getElementById('email') as HTMLInputElement);
+    let name = (document.getElementById('from_name') as HTMLInputElement);
+    let email = (document.getElementById('from_email') as HTMLInputElement);
     let message = (document.getElementById('message') as HTMLInputElement);
 
     const fields = [name, email, message];
@@ -36,12 +27,17 @@ function ContactForm() {
   }
 
   function handleSubmit(e: FormEvent) {
+
     e.preventDefault();
-    addFormDataToDatabase(formData)
+
+    const serviceID = 'default_service';
+    const templateID = 'template_3vbvzqh';
+
+    emailjs.sendForm(serviceID, templateID, 'form')
       .then(() => {
         setSubmitState('Submitted');
-      })
-      .catch(() => {
+        alert('Obrigado! 🚀');
+      }).catch(() => {
         setSubmitState('Error found');
       });
   }
@@ -73,6 +69,7 @@ function ContactForm() {
 
   return (
     <form
+      id='form'
       onSubmit={handleSubmit}
       method="POST"
       target="_blank"
@@ -82,23 +79,21 @@ function ContactForm() {
       <div className="grid grid-cols-4 gap-4 col-span-5">
         <div className="col-span-4 sm:col-span-2 intervalCardReveal">
           <input
-            id="name"
+            id="from_name"
             type="text"
             placeholder="Seu nome"
-            name="name"
+            name="from_name"
             className="placeholder-gray-400 text-gray-600"
-            onChange={handleOnChange}
             required
           />
         </div>
         <div className="col-span-4 sm:col-span-2 intervalCardReveal">
           <input
-            id="email"
+            id="from_email"
             type="email"
             placeholder="Email"
-            name="email"
+            name="from_email"
             className="placeholder-gray-400 text-gray-600"
-            onChange={handleOnChange}
             required
           />
         </div>
@@ -109,7 +104,6 @@ function ContactForm() {
           placeholder="Sua mensagem"
           name="message"
           className="placeholder-gray-400 text-gray-600"
-          onChange={handleOnChange}
           required
         />
       </div>
