@@ -15,7 +15,7 @@
       "@semantic-release/changelog",
       "@semantic-release/git"
     ],
-    "branch": "master"
+    "branches": "master"
   },
   "dependencies": {
     "@emailjs/browser": "^3.6.2",
