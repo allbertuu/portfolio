@@ -1,19 +1,19 @@
 // imgs and icons
-import logoImg from '../../assets/imgs/logo.png';
-import GitHubIcon from '@mui/icons-material/GitHub';
+import logoImg from "../../assets/imgs/logo.png";
+import GitHubIcon from "@mui/icons-material/GitHub";
 
 type Socials = {
-  github: string,
-}
+  github: string;
+};
 
 type ProjectCardProps = {
-  title: string,
-  imgSrc: string,
-  url: string,
-  socials: Socials
-}
+  title: string;
+  imgSrc: string;
+  url: string;
+  socials: Socials;
+};
 
-function ProjectCard({ title, imgSrc, url, socials }:ProjectCardProps) {
+function ProjectCard({ title, imgSrc, url, socials }: ProjectCardProps) {
   return (
     <div className="c-project-card intervalCardReveal">
       <span className="c-project-card__blob" />
@@ -23,7 +23,7 @@ function ProjectCard({ title, imgSrc, url, socials }:ProjectCardProps) {
       </div>
 
       <a className="c-project-card__main-img" href={url}>
-        <img src={imgSrc} alt='Visão geral do projeto' />
+        <img src={imgSrc} alt="Visão geral do projeto" />
         <img src={logoImg} alt="Logo vermelha" />
       </a>
 
@@ -31,12 +31,11 @@ function ProjectCard({ title, imgSrc, url, socials }:ProjectCardProps) {
 
       <div className="c-project-card__icons">
         <a href={socials.github}>
-          <GitHubIcon fontSize='inherit' />
+          <GitHubIcon fontSize="inherit" />
         </a>
       </div>
-
     </div>
   );
 }
 
-export default ProjectCard
+export default ProjectCard;

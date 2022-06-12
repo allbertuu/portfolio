@@ -1,4 +1,4 @@
-import ScrollReveal from 'scrollreveal';
+import ScrollReveal from "scrollreveal";
 
 export default ScrollReveal();
 
@@ -25,30 +25,29 @@ export function scrollTo(id?: string) {
   let el = document.getElementById(id);
   if (el) {
     el.scrollIntoView({
-      behavior: 'smooth',
-    })
-  }
-  else {
-    console.error('Seção não existe.');
+      behavior: "smooth",
+    });
+  } else {
+    console.error("Seção não existe.");
   }
 }
 
 export function convertWeekdayNumberToString(numberWeekday: number) {
   switch (numberWeekday) {
     case 0:
-      return 'Domingo';
+      return "Domingo";
     case 1:
-      return 'Segunda';
+      return "Segunda";
     case 2:
-      return 'Terça';
+      return "Terça";
     case 3:
-      return 'Quarta';
+      return "Quarta";
     case 4:
-      return 'Quinta';
+      return "Quinta";
     case 5:
-      return 'Sexta';
+      return "Sexta";
     case 6:
-      return 'Sábado';
+      return "Sábado";
     default:
       break;
   }
