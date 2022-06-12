@@ -36,7 +36,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "release": "semantic-release",
+    "release:dry": "semantic-release --dry-run"
   },
   "eslintConfig": {
     "extends": [
