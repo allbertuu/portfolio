@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/allbertuu/portfolio/compare/v1.0.0...v1.1.0) (2022-06-13)
+
+
+### Features
+
+* built-in form validation ([a8ec25c](https://github.com/allbertuu/portfolio/commit/a8ec25c3efafadc40df1121d7364a733e7779340))
+
 # 1.0.0 (2022-06-12)
 
 
