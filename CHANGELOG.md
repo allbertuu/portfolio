@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/allbertuu/portfolio/compare/v1.1.0...v1.2.0) (2022-06-13)
+
+
+### Features
+
+* min-length to message field ([39d1af3](https://github.com/allbertuu/portfolio/commit/39d1af3761a650d73a5fc5b6eda32bee6c46b808))
+
 # [1.1.0](https://github.com/allbertuu/portfolio/compare/v1.0.0...v1.1.0) (2022-06-13)
 
 
