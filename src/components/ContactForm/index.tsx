@@ -112,6 +112,7 @@ function ContactForm() {
           placeholder="Sua mensagem"
           name="message"
           className="placeholder-gray-400 text-gray-600"
+          minLength={20}
           maxLength={500}
           required
         />
