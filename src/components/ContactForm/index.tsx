@@ -90,6 +90,7 @@ function ContactForm() {
             placeholder="Seu nome"
             name="from_name"
             className="placeholder-gray-400 text-gray-600"
+            maxLength={20}
             required
           />
         </div>
@@ -100,6 +101,7 @@ function ContactForm() {
             placeholder="Email"
             name="from_email"
             className="placeholder-gray-400 text-gray-600"
+            minLength={15}
             required
           />
         </div>
@@ -110,6 +112,7 @@ function ContactForm() {
           placeholder="Sua mensagem"
           name="message"
           className="placeholder-gray-400 text-gray-600"
+          maxLength={500}
           required
         />
       </div>
