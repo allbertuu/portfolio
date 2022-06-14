@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/allbertuu/portfolio/compare/v1.2.0...v1.3.0) (2022-06-14)
+
+
+### Features
+
+* min length to name field of the contact form ([cbe7266](https://github.com/allbertuu/portfolio/commit/cbe7266df799c7b7b3c3c71b0eba66871826c4a9))
+
 # [1.2.0](https://github.com/allbertuu/portfolio/compare/v1.1.0...v1.2.0) (2022-06-13)
 
 
