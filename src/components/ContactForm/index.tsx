@@ -90,6 +90,7 @@ function ContactForm() {
             placeholder="Seu nome"
             name="from_name"
             className="placeholder-gray-400 text-gray-600"
+            minLength={5}
             maxLength={20}
             required
           />
