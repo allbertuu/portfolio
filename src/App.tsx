@@ -88,16 +88,17 @@ function App() {
           <div className="intervalCardReveal">
             <h1 className="delaySmallReveal">Sobre mim</h1>
             <p className="delayMediumReveal">
-              Meu nome é Alberto Vinícius A. dos Santos, tenho 19 anos e sou
-              desenvolvedor Front-end. <br />
+              Meu nome é Alberto Vinícius, tenho 19 anos e, atualmente, sou
+              desenvolvedor Front-end especializado em ReactJS. <br />
               Meu início no mundo da programação se deu em 2019, onde tive meu
               primeiro contato com uma linguagem de programação: <i>C#</i>.{" "}
               <br />
               Me encantei pela forma de como alguns problemas recorrentes e
-              necessários podem facilmente serem resolvidos com o auxílio da
+              complicados podem facilmente serem resolvidos com o auxílio da
               tecnologia e, desde então, desenvolvo tudo que possa vir à ser
-              útil para alguém. Sou um jovem ambicioso, com uma sede invejável e
-              constante por conhecimento.
+              útil para alguém. Amo desafios, e procuro por eles. Sou
+              extremamente flexível e cultivo autonomia. <br />
+              Eu nunca paro de estudar. Nunca. 📚
             </p>
           </div>
         </section>
