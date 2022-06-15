@@ -13,7 +13,12 @@ type ProjectCardProps = {
   socials: Socials;
 };
 
-function ProjectCard({ title, imgSrc, url, socials }: ProjectCardProps) {
+export default function ProjectCard({
+  title,
+  imgSrc,
+  url,
+  socials,
+}: ProjectCardProps) {
   return (
     <div className="c-project-card intervalCardReveal">
       <span className="c-project-card__blob" />
@@ -37,5 +42,3 @@ function ProjectCard({ title, imgSrc, url, socials }: ProjectCardProps) {
     </div>
   );
 }
-
-export default ProjectCard;

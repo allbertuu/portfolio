@@ -6,7 +6,7 @@ type ButtonProps = {
   to?: string;
 };
 
-function Button({ text, type = "primary", to }: ButtonProps) {
+export default function Button({ text, type = "primary", to }: ButtonProps) {
   return (
     <button
       className={`c-btn c-btn-faixa-welcome c-btn-faixa--${type}`}
@@ -16,5 +16,3 @@ function Button({ text, type = "primary", to }: ButtonProps) {
     </button>
   );
 }
-
-export default Button;

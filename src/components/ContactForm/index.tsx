@@ -5,7 +5,7 @@ import emailjs from "@emailjs/browser";
 
 type SubmitState = "Error found" | "Not submitted" | "Submitting" | "Submitted";
 
-function ContactForm() {
+export default function ContactForm() {
   emailjs.init("rqA0490qfu66Z9Qjn");
 
   const [submitState, setSubmitState] = useState<SubmitState>("Not submitted");
@@ -127,5 +127,3 @@ function ContactForm() {
     </form>
   );
 }
-
-export default ContactForm;

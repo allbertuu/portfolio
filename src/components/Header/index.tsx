@@ -14,7 +14,7 @@ type SectionList = {
   icon: JSX.Element;
 }[];
 
-function Header() {
+export default function Header() {
   const [isNavVisibility, setNavVisibility] = useState(false);
 
   const sectionList: SectionList = [
@@ -89,5 +89,3 @@ function Header() {
     </header>
   );
 }
-
-export default Header;
