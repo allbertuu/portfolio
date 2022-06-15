@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 // scripts
-import sr, { initScrollReveal, scrollWindowToTop } from "./assets/scripts/main";
+import { sr, initScrollReveal, scrollWindowToTop } from "./assets/scripts/main";
 import projectsList from "./assets/scripts/projectsList";
 import skillsList from "./assets/scripts/skillsList";
 // components

@@ -1,6 +1,6 @@
 import ScrollReveal from "scrollreveal";
 
-export default ScrollReveal();
+export const sr = ScrollReveal();
 
 export function initScrollReveal() {
   const sr = ScrollReveal({
