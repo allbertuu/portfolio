@@ -1,3 +1,15 @@
+# [1.4.0](https://github.com/allbertuu/portfolio/compare/v1.3.0...v1.4.0) (2022-06-15)
+
+
+### Bug Fixes
+
+* sr exported as default on main script ([13c9f03](https://github.com/allbertuu/portfolio/commit/13c9f033a54d59d478e18faf7c0ba88e0e9d9edd))
+
+
+### Features
+
+* button to go to the top of the window ([ed36fe3](https://github.com/allbertuu/portfolio/commit/ed36fe3d705a5beaf29f862fad2b0f2dbcc32e53))
+
 # [1.3.0](https://github.com/allbertuu/portfolio/compare/v1.2.0...v1.3.0) (2022-06-14)
 
 
