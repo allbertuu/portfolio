@@ -2,7 +2,8 @@
 # Portfólio ❤
 
 Um site feito inteiramente por mim, com o objetivo de possibilitar possíveis clientes ou não, a:
-- Entrarem em contato comigo, conhecerem sobre mim, o que eu faço e quais minhas habilidades. 
+- Entrarem em contato comigo, conhecerem sobre mim, o que eu faço e quais minhas habilidades.  
+
 Tudo isso de forma: fácil, visualmente harmoniosa e direta ao ponto. Havendo também minha marca pessoal e logotipo próprio.
 
 ## Estrutura
