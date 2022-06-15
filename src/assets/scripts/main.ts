@@ -32,6 +32,13 @@ export function scrollTo(id?: string) {
   }
 }
 
+export function scrollWindowToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+}
+
 export function convertWeekdayNumberToString(numberWeekday: number) {
   switch (numberWeekday) {
     case 0:

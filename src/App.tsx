@@ -1,6 +1,6 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 // scripts
-import sr, { initScrollReveal } from "./assets/scripts/main";
+import sr, { initScrollReveal, scrollWindowToTop } from "./assets/scripts/main";
 import projectsList from "./assets/scripts/projectsList";
 import skillsList from "./assets/scripts/skillsList";
 // components
@@ -13,10 +13,13 @@ import ContactForm from "./components/ContactForm";
 import imgLogoTransparent from "./assets/imgs/logo-transparent.png";
 import imgLogo from "./assets/imgs/logo.png";
 import profileImg from "./assets/imgs/developer.png";
+import ArrowUpwardIcon from "@mui/icons-material/ArrowUpward";
 // general styles
 import "./App.scss";
 
 function App() {
+  const [arrowUpVisibility, setArrowUpVisibility] = useState(false);
+
   useEffect(() => {
     initScrollReveal();
 
@@ -37,6 +40,18 @@ function App() {
     sr.reveal(".item_2", item_2);
     sr.reveal(".item_3", item_3);
     sr.reveal("#profileImg", profileImg);
+
+    const scrollListener = () => {
+      window.scrollY > 200
+        ? setArrowUpVisibility(true)
+        : setArrowUpVisibility(false);
+    };
+
+    window.addEventListener("scroll", scrollListener);
+
+    return () => {
+      window.removeEventListener("scroll", scrollListener);
+    };
   }, []);
 
   return (
@@ -124,6 +139,17 @@ function App() {
           <ContactForm />
         </section>
       </main>
+
+      <button
+        className={
+          arrowUpVisibility
+            ? "fixed right-6 bottom-6 bg-white rounded-full px-2 py-1.5 text-rose-600 transition-all duration-500 opacity-100"
+            : "opacity-0"
+        }
+        onClick={scrollWindowToTop}
+      >
+        <ArrowUpwardIcon fontSize="medium" />
+      </button>
 
       <footer className="py-10">
         <div>
