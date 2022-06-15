@@ -18,7 +18,6 @@ Para este propósito, o portfólio conta com seções, sendo elas:
 ## Stack utilizada ⚙
 
 **Front-end:** 
-<div>
   <img align="center" alt="JavaScript badge" src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black">
   <img align="center" alt="React.js badge" src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB">
   <img align="center" alt="Sass badge" src="https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white">
@@ -26,19 +25,18 @@ Para este propósito, o portfólio conta com seções, sendo elas:
   <img align="center" alt="TailwindCSS badge" src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white">
   <img align="center" alt="CSS badge" src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white">
   <img align="center" alt="HTML badge" src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
-</div>
-
+  
 **Back-end:** EmailJS
 
 ## Documentação de cores 🎨
 
 | Cor               | Hexadecimal                                                |
 | ----------------- | ---------------------------------------------------------------- |
-| Cor primária       | ![#da0941](https://via.placeholder.com/10/da0941?text=+) #da0941 |
-| Cor primária escura    | ![#b80c3a](https://via.placeholder.com/10/b80c3a?text=+) #b80c3a |
-| Cor primária mais escura       | ![#a10831d0](https://via.placeholder.com/10/a10831d0?text=+) #a10831d0 |
-| Cor secundária       | ![#041a27](https://via.placeholder.com/10/041a27?text=+) #041a27 |
-| Cor secundária escura       | ![#041722](https://via.placeholder.com/10/041722?text=+) #041722 |
+| Cor primária       | ![#da0941](https://via.placeholder.com/10/da0941.png?text=+) #da0941 |
+| Cor primária escura    | ![#b80c3a](https://via.placeholder.com/10/b80c3a.png?text=+) #b80c3a |
+| Cor primária mais escura       | ![#a10831d0](https://via.placeholder.com/10/a10831d0.png?text=+) #a10831d0 |
+| Cor secundária       | ![#041a27](https://via.placeholder.com/10/041a27.png?text=+) #041a27 |
+| Cor secundária escura       | ![#041722](https://via.placeholder.com/10/041722.png?text=+) #041722 |
 
 ## Autor(es) 🙎🏻‍♂️
 
