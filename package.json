@@ -17,12 +17,6 @@
     ],
     "branches": "master"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "", 
-      "pre-push": ""
-    }
-  },
   "dependencies": {
     "@emailjs/browser": "^3.6.2",
     "@emotion/react": "^11.9.0",
@@ -45,7 +39,8 @@
     "eject": "react-scripts eject",
     "release": "semantic-release",
     "release:dry": "semantic-release --dry-run",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "commit": "git-cz"
   },
   "eslintConfig": {
     "extends": [
@@ -74,6 +69,8 @@
     "@semantic-release/git": "^10.0.1",
     "@types/scrollreveal": "^0.0.8",
     "autoprefixer": "^10.4.4",
+    "commitizen": "^4.2.4",
+    "cz-conventional-changelog": "3.3.0",
     "husky": "^8.0.1",
     "postcss": "^8.4.12",
     "sass": "^1.49.9",
@@ -87,5 +84,10 @@
     "frontend"
   ],
   "author": "Alberto Albuquerque",
-  "license": "ISC"
+  "license": "ISC",
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
 }
