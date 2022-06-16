@@ -17,6 +17,12 @@
     ],
     "branches": "master"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "", 
+      "pre-push": ""
+    }
+  },
   "dependencies": {
     "@emailjs/browser": "^3.6.2",
     "@emotion/react": "^11.9.0",
@@ -38,7 +44,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "release": "semantic-release",
-    "release:dry": "semantic-release --dry-run"
+    "release:dry": "semantic-release --dry-run",
+    "prepare": "husky install"
   },
   "eslintConfig": {
     "extends": [
@@ -67,6 +74,7 @@
     "@semantic-release/git": "^10.0.1",
     "@types/scrollreveal": "^0.0.8",
     "autoprefixer": "^10.4.4",
+    "husky": "^8.0.1",
     "postcss": "^8.4.12",
     "sass": "^1.49.9",
     "semantic-release": "^19.0.3",
