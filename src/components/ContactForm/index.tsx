@@ -99,7 +99,7 @@ export default function ContactForm() {
           <input
             id="from_email"
             type="email"
-            placeholder="Email"
+            placeholder="Seu melhor email"
             name="from_email"
             className="placeholder-gray-400 text-gray-600"
             minLength={15}
