@@ -69,7 +69,7 @@
     "frontend"
   ],
   "author": "Alberto Albuquerque",
-  "license": "ISC",
+  "license": "MIT",
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
