@@ -1,3 +1,10 @@
+## [1.4.1](https://github.com/allbertuu/portfolio/compare/v1.4.0...v1.4.1) (2022-06-18)
+
+
+### Bug Fixes
+
+* **ContactForm:** more readable placeholder text ([85819c1](https://github.com/allbertuu/portfolio/commit/85819c10b9a413075bd6623000275809c966a741))
+
 # [1.4.0](https://github.com/allbertuu/portfolio/compare/v1.3.0...v1.4.0) (2022-06-15)
 
 
