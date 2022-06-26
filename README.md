@@ -6,6 +6,10 @@ Um site feito inteiramente por mim, com o objetivo de possibilitar possíveis cl
 
 Tudo isso de forma: fácil, visualmente harmoniosa e direta ao ponto. Havendo também minha marca pessoal e logotipo próprio.
 
+## Screenshot
+
+![Project Screenshot](./screenshots/main.jpg)
+
 ## Estrutura
 
 Para este propósito, o portfólio conta com seções, sendo elas:
@@ -45,6 +49,10 @@ Para este propósito, o portfólio conta com seções, sendo elas:
 - [Meu portfólio website](https://portfolio-allbertuu.vercel.app/) - (exatamente a aplicação desta documentação rs)
 - [LinkedIn](https://www.linkedin.com/in/albertov-albuquerque/)
 - [Frontend Mentor](https://www.frontendmentor.io/profile/allbertuu)
+
+## Feedback
+
+Se você tiver algum feedback, por favor me deixe saber por meio de albertovinicius3@gmail.com, ou pela seção "Contato" no meu portfólio.
 
 ## Licença
 
