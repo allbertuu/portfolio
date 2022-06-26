@@ -27,6 +27,8 @@ export default function ContactForm() {
   function handleSubmit(e: FormEvent) {
     e.preventDefault();
 
+    setSubmitState("Submitting");
+
     const serviceID = "default_service";
     const templateID = "template_3vbvzqh";
 
@@ -34,7 +36,6 @@ export default function ContactForm() {
       .sendForm(serviceID, templateID, "form")
       .then(() => {
         setSubmitState("Submitted");
-        alert("Obrigado! 🚀");
       })
       .catch(() => {
         setSubmitState("Error found");
@@ -44,6 +45,27 @@ export default function ContactForm() {
   function handleError() {
     resetInputs();
     setSubmitState("Not submitted");
+  }
+
+  if (submitState === "Submitting") {
+    return (
+      <div className="delayMediumReveal">
+        <div className="u-spinner text-sm md:text-xl pl-4">
+          <span>R</span>
+          <span>E</span>
+          <span>C</span>
+          <span>E</span>
+          <span>B</span>
+          <span>E</span>
+          <span>N</span>
+          <span>D</span>
+          <span>O</span>
+          <span>.</span>
+          <span>.</span>
+          <span>.</span>
+        </div>
+      </div>
+    );
   }
 
   if (submitState === "Submitted") {
