@@ -46,6 +46,27 @@ export default function ContactForm() {
     setSubmitState("Not submitted");
   }
 
+  if (submitState === "Submitting") {
+    return (
+      <div className="delayMediumReveal">
+        <div className="u-spinner text-sm md:text-xl pl-4">
+          <span>R</span>
+          <span>E</span>
+          <span>C</span>
+          <span>E</span>
+          <span>B</span>
+          <span>E</span>
+          <span>N</span>
+          <span>D</span>
+          <span>O</span>
+          <span>.</span>
+          <span>.</span>
+          <span>.</span>
+        </div>
+      </div>
+    );
+  }
+
   if (submitState === "Submitted") {
     return (
       <div className="text-center delayMediumReveal">
