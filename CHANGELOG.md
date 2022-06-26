@@ -1,3 +1,10 @@
+# [1.5.0](https://github.com/allbertuu/portfolio/compare/v1.4.1...v1.5.0) (2022-06-26)
+
+
+### Features
+
+* **ContactForm:** loading when submitting ([fa15c1f](https://github.com/allbertuu/portfolio/commit/fa15c1f253ccb7446e148f5958357c705e959343))
+
 ## [1.4.1](https://github.com/allbertuu/portfolio/compare/v1.4.0...v1.4.1) (2022-06-18)
 
 
