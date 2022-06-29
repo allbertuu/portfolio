@@ -1,3 +1,20 @@
+# [2.0.0](https://github.com/allbertuu/portfolio/compare/v1.6.0...v2.0.0) (2022-06-29)
+
+
+### Bug Fixes
+
+* **projectcard.scss:** fix overflow width in extra-small devices breakpoint ([4df8b8f](https://github.com/allbertuu/portfolio/commit/4df8b8f832d98500c1b13be236b07507e3d81984))
+
+
+### Performance Improvements
+
+* **index.tsx:** update code to React v18 ([ae8e236](https://github.com/allbertuu/portfolio/commit/ae8e2366f3fe46fc85a88c1ef92e695ae5f6ac9c))
+
+
+### BREAKING CHANGES
+
+* **index.tsx:** Compatibility of v18 and v17
+
 # [1.6.0](https://github.com/allbertuu/portfolio/compare/v1.5.0...v1.6.0) (2022-06-26)
 
 
