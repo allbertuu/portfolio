@@ -4,9 +4,12 @@
   transition: all 0.5s;
   position: relative;
 
-  min-width: 280px;
-  width: 280px;
-  height: 240px;
+  width: 100%;
+  max-width: 280px;
+  height: 220px;
+  @media (min-width: 375px) {
+    height: 240px;
+  }
 
   @apply shadow-lg;
 
