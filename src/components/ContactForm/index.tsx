@@ -24,7 +24,7 @@ export default function ContactForm() {
     });
   }
 
-  function handleSubmit(e: FormEvent) {
+  async function handleSubmit(e: FormEvent) {
     e.preventDefault();
 
     setSubmitState("Submitting");
@@ -32,7 +32,7 @@ export default function ContactForm() {
     const serviceID = "default_service";
     const templateID = "template_3vbvzqh";
 
-    emailjs
+    await emailjs
       .sendForm(serviceID, templateID, "form")
       .then(() => {
         setSubmitState("Submitted");
