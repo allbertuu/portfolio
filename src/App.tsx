@@ -14,6 +14,7 @@ import imgLogoTransparent from "./assets/imgs/logo-transparent.png";
 import imgLogo from "./assets/imgs/logo.png";
 import profileImg from "./assets/imgs/developer.png";
 import ArrowUpwardIcon from "@mui/icons-material/ArrowUpward";
+import GitHubIcon from "@mui/icons-material/GitHub";
 // general styles
 import "./App.scss";
 
@@ -116,6 +117,11 @@ function App() {
               />
             ))}
           </div>
+          <p className="delayLargeReveal">
+            E muitooo mais no meu{" "}
+            <a href="https://github.com/allbertuu">GitHub</a>
+            <GitHubIcon />
+          </p>
         </section>
 
         <section id="s-skills" className="grid gap-16 pt-20 pb-32">
