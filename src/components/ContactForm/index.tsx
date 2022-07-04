@@ -141,7 +141,7 @@ export default function ContactForm() {
         />
       </div>
       <button
-        className="col-end-6 col-span-2 c-btn c-btn-faixa c-btn-faixa--secondary intervalCardReveal"
+        className="col-end-6 col-span-3 sm:col-end-6 sm:col-span-2 c-btn c-btn-faixa c-btn-faixa--secondary intervalCardReveal"
         type="submit"
       >
         Enviar
