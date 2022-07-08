@@ -132,10 +132,9 @@ function App() {
                 key={skill.name}
                 name={skill.name}
                 description={skill.description}
-                iconPath={skill.iconPath}
-                iconViewBox={skill.iconViewBox}
+                IconSVG={skill.iconSVG}
                 yearsExperience={skill.yearsExperience}
-                colorOnHover={skill.colorOnHover}
+                colorOnFocus={skill.colorOnFocus}
               />
             ))}
           </div>
