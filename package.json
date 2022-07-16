@@ -2,6 +2,16 @@
   "name": "portfolio",
   "version": "2.1.0",
   "private": true,
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "release": "semantic-release",
+    "release:dry": "semantic-release --dry-run",
+    "prepare": "husky install",
+    "commit": "git-cz"
+  },
   "dependencies": {
     "@emailjs/browser": "^3.6.2",
     "@emotion/react": "^11.9.0",
@@ -18,15 +28,22 @@
     "styled-components": "^5.3.5",
     "web-vitals": "^2.1.0"
   },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "release": "semantic-release",
-    "release:dry": "semantic-release --dry-run",
-    "prepare": "husky install",
-    "commit": "git-cz"
+  "devDependencies": {
+    "@commitlint/cli": "^17.0.2",
+    "@commitlint/config-conventional": "^17.0.2",
+    "@semantic-release/changelog": "^6.0.1",
+    "@semantic-release/git": "^10.0.1",
+    "@types/scrollreveal": "^0.0.8",
+    "@types/styled-components": "^5.1.25",
+    "autoprefixer": "^10.4.4",
+    "commitizen": "^4.2.4",
+    "cz-conventional-changelog": "3.3.0",
+    "husky": "^8.0.1",
+    "postcss": "^8.4.12",
+    "sass": "^1.49.9",
+    "semantic-release": "^19.0.3",
+    "tailwindcss": "^3.0.23",
+    "typescript": "^4.6.4"
   },
   "eslintConfig": {
     "extends": [
@@ -48,23 +65,6 @@
   },
   "description": "A website with my portfolio.",
   "main": "index.js",
-  "devDependencies": {
-    "@commitlint/cli": "^17.0.2",
-    "@commitlint/config-conventional": "^17.0.2",
-    "@semantic-release/changelog": "^6.0.1",
-    "@semantic-release/git": "^10.0.1",
-    "@types/scrollreveal": "^0.0.8",
-    "@types/styled-components": "^5.1.25",
-    "autoprefixer": "^10.4.4",
-    "commitizen": "^4.2.4",
-    "cz-conventional-changelog": "3.3.0",
-    "husky": "^8.0.1",
-    "postcss": "^8.4.12",
-    "sass": "^1.49.9",
-    "semantic-release": "^19.0.3",
-    "tailwindcss": "^3.0.23",
-    "typescript": "^4.6.4"
-  },
   "keywords": [
     "portfolio",
     "alberto-dev",
