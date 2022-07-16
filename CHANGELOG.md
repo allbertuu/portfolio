@@ -1,3 +1,15 @@
+# [2.1.0](https://github.com/allbertuu/portfolio/compare/v2.0.0...v2.1.0) (2022-07-04)
+
+
+### Bug Fixes
+
+* **contactform:** adjust button on xs devices ([1fb9a71](https://github.com/allbertuu/portfolio/commit/1fb9a717c56501d543d11f26e11d3a06faccffe5))
+
+
+### Features
+
+* add my github on projects section ([7a5643a](https://github.com/allbertuu/portfolio/commit/7a5643a32914d037fc34f7ae85d4daa5c0c6d9d5))
+
 # [2.0.0](https://github.com/allbertuu/portfolio/compare/v1.6.0...v2.0.0) (2022-06-29)
 
 
