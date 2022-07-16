@@ -1,3 +1,10 @@
+# [2.3.0](https://github.com/allbertuu/portfolio/compare/v2.2.0...v2.3.0) (2022-07-16)
+
+
+### Features
+
+* **skillcard:** improve card layout ([a93ecaa](https://github.com/allbertuu/portfolio/commit/a93ecaae589984f25149789d3c418910783dfb4d))
+
 # [2.2.0](https://github.com/allbertuu/portfolio/compare/v2.1.0...v2.2.0) (2022-07-16)
 
 
