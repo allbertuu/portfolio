@@ -1,3 +1,11 @@
+# [2.2.0](https://github.com/allbertuu/portfolio/compare/v2.1.0...v2.2.0) (2022-07-16)
+
+
+### Features
+
+* add colors module for styled components ([0f3d023](https://github.com/allbertuu/portfolio/commit/0f3d0231845382a86a368aa47a8fc930f26c6ded))
+* **skillcard:** add icons (svg components) ([d823479](https://github.com/allbertuu/portfolio/commit/d8234791cab30a88d5fe6774b147c8284404588b))
+
 # [2.1.0](https://github.com/allbertuu/portfolio/compare/v2.0.0...v2.1.0) (2022-07-04)
 
 
