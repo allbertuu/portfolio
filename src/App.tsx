@@ -117,9 +117,9 @@ function App() {
               />
             ))}
           </div>
-          <p className="delayLargeReveal">
+          <p className="delayLargeReveal text-xl sm:text-2xl flex items-center justify-center gap-1">
             E muitooo mais no meu{" "}
-            <a href="https://github.com/allbertuu">GitHub</a>
+            <a href="https://github.com/allbertuu"><u>GitHub</u></a>
             <GitHubIcon />
           </p>
         </section>

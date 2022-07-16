@@ -152,14 +152,8 @@ body {
   }
 
   p {
-    @apply flex justify-center gap-1;
     @media (max-width: 370px) {
       flex-direction: column;
-      align-items: center;
-    }
-
-    a {
-      text-decoration: underline;
     }
   }
 }
