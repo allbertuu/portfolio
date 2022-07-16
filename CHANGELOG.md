@@ -1,3 +1,10 @@
+# [2.4.0](https://github.com/allbertuu/portfolio/compare/v2.3.0...v2.4.0) (2022-07-16)
+
+
+### Features
+
+* **s-projects:** improve paragraph element ([f10a9ba](https://github.com/allbertuu/portfolio/commit/f10a9ba73ce9c03e5008e9b3d748f5ded28cc030))
+
 # [2.3.0](https://github.com/allbertuu/portfolio/compare/v2.2.0...v2.3.0) (2022-07-16)
 
 
