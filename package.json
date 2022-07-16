@@ -70,7 +70,7 @@
     "alberto-dev",
     "frontend"
   ],
-  "author": "Alberto Vinícius A. dos Santos",
+  "author": "Alberto Vinícius <albertovinicius3@gmail.com>",
   "license": "MIT",
   "config": {
     "commitizen": {
